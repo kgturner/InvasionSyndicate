@@ -1,0 +1,111 @@
+name	common_name	genus	species	subspecies	type	population	tissue	sampled_age	pop_collect_date	collector	locality	plant_grower_tissue_collector		latitude	library_type	library_prep	library_who	library_number	restriction_enzyme	read_tech	sequence_format	quality_format	date_sequenced	sequencing_facility	read_length_mode	total_sequence_Mbp	barcodes	barcode_type_position	mate_pair_library	current_known_location	file_name	who_received_sequences	notes	known_alias	submitted_to_SRA
+HU1	common ragweed	Ambrosia	artemisiifolia	NA	introduced	HU1	leaf	adult/preflowering	Fall 2009	Levante Kiss	"Biatorbagy, Hungary"	Kay Hodgins		"Lat 47.46, Long 18.81"	"cDNA normalized, single stranded"	standard library	Kay Hodgins/GQ		no	454	fasta	qual	"2009-11-03,  2010-07-14"	GQ		38			no	silio: /data/raid5part1/weeds/Raw/	"HU1a.fna, HU1b.fna, HU1a.qual, HU1b.qual"	Kay Hodgins			
+AA8	common ragweed	Ambrosia	artemisiifolia	NA	native	AA8	leaf	adult/preflowering	Fall 2009	Kay Hodgins	"Russell, MN, USA"	Kay Hodgins		"Lat 44.19, Long -95.57"	"cDNA normalized, single stranded"	standard library	Kay Hodgins/GQ		no	454	fasta	qual	"2009-11-03,  2010-07-16"	GQ		33			no	silio: /data/raid5part1/weeds/Raw	"AA8a.fna, AA8b.fna, AA8a.qual, AA8b.qual"	Kay Hodgins			
+CA-1-1	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-1					California	Katrina Dlugosch							no	454-FLX					259	17.2			no	Katrina		Katrina Dlugosch			
+CA-1-2	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-1					California	Katrina Dlugosch							no	454-FLX					256	25.1			no			Katrina Dlugosch			
+CA-2-2	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-2					California	Katrina Dlugosch							no	454-FLX					256	20.1			no			Katrina Dlugosch			
+CA-2-4	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-2					California	Katrina Dlugosch							no	454-FLX					257	19.9			no			Katrina Dlugosch			
+CA-3-1	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-3					California	Katrina Dlugosch							no	454-FLX					260	58			no			Katrina Dlugosch			
+CA-3-2	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-3					California	Katrina Dlugosch							no	454-FLX					259	58.1			no			Katrina Dlugosch			
+CA-4-1	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-4					California	Katrina Dlugosch							no	454-FLX					259	80.1			no			Katrina Dlugosch			
+CA-4-3	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-4					California	Katrina Dlugosch							no	454-FLX					259	20			no			Katrina Dlugosch			
+CA-4-4	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-4					California	Katrina Dlugosch							no	454-Ti			"2010-07-14, 2009-08-27"	GQ	421	206.3			no			Katrina Dlugosch			
+CA-5-3	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-5					California	Katrina Dlugosch							no	454-FLX					257	80.2			no			Katrina Dlugosch			
+CA-5-4	yellow starthistle	Centaurea	solstitialis	NA	introduced	CA-5					California	Katrina Dlugosch							no	454-FLX					263	21.1			no			Katrina Dlugosch			
+AR-1-24	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-1	leaf				Argentina	Katrina Dlugosch		"Lat -37.39, Long -64.08"	"Normalized, double-stranded"				no	454-Ti			12/1/2009		499	234.7			no			Katrina Dlugosch	region 1	Z1	
+AR-1-25C	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-1					Argentina	Katrina Dlugosch							no	454-Ti			"2010-07-16, 2009-07-08"	GQ	506	153.7			no			Katrina Dlugosch			
+AR-6-13	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-6					Argentina	Katrina Dlugosch							no	454-Ti			12/1/2009		507	256.4			no			Katrina Dlugosch	region 1		
+AR-6-26	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-6					Argentina	Katrina Dlugosch							no	454-Ti			9/1/2009	GQ	419	181.7			no			Katrina Dlugosch			
+AR-8-15	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-8					Argentina	Katrina Dlugosch							no	454-Ti			9/1/2009	GQ	420	166.1			no			Katrina Dlugosch			
+AR-8-19	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-8					Argentina	Katrina Dlugosch							no	454-Ti			12/1/2009	CGB	503	259.3			no			Katrina Dlugosch	region 2	Z3	
+AR-13-24	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-13					Argentina	Katrina Dlugosch							no	454-Ti				CGB	510	274.6			no			Katrina Dlugosch	region 1	Z4	
+AR-13-28	yellow starthistle	Centaurea	solstitialis	NA	introduced	AR-13					Argentina	Katrina Dlugosch							no	454-Ti			"2010-07-08, 2009-07-20"	GQ	421	183.5			no			Katrina Dlugosch			
+SP-1-5	yellow starthistle	Centaurea	solstitialis	NA	ancient expansion	SP-1					Spain	Katrina Dlugosch							no	454-Ti			10/6/2009	GQ	498	152.5			no			Katrina Dlugosch			
+SP-1-10	yellow starthistle	Centaurea	solstitialis	NA	ancient expansion	SP-1					Spain	Katrina Dlugosch							no	454-Ti			3/23/2010	CGB	510	269.7			no			Katrina Dlugosch	region 2	Z7	
+SP-2-2	yellow starthistle	Centaurea	solstitialis	NA	ancient expansion	AP-2					Spain	Katrina Dlugosch							no	454-Ti			"2010-07-08, 2009-08-07"	GQ	361	181.9			no			Katrina Dlugosch			
+SP-2-6	yellow starthistle	Centaurea	solstitialis	NA	ancient expansion	AP-2					Spain	Katrina Dlugosch							no	454-Ti			3/25 +3/29	CGB	501	332.6			no			Katrina Dlugosch	region 1	Z8	
+GA-1-1	yellow starthistle	Centaurea	solstitialis	NA	native	GA-1					Georgia	Katrina Dlugosch							no	454-FLX					258	19.1			no			Katrina Dlugosch			
+GA-2-1	yellow starthistle	Centaurea	solstitialis	NA	native	GA-2					Georgia	Katrina Dlugosch							no	454-FLX					256	18.9			no			Katrina Dlugosch			
+GA-3-4	yellow starthistle	Centaurea	solstitialis	NA	native	GA-3					Georgia	Katrina Dlugosch							no	454-FLX					252	11.5			no			Katrina Dlugosch			
+GA-4-3	yellow starthistle	Centaurea	solstitialis	NA	native	GA-4					Georgia	Katrina Dlugosch							no	454-FLX					257	13			no			Katrina Dlugosch			
+GA-5-4	yellow starthistle	Centaurea	solstitialis	NA	native	GA-5					Georgia	Katrina Dlugosch							no	454-FLX					259	12.8			no			Katrina Dlugosch			
+GA-5-24	yellow starthistle	Centaurea	solstitialis	NA	native	GA-5					Georgia	Katrina Dlugosch							no	454-FLX			"2010-07-16, 2010-07-08, 2009-08-25"	GQ	419	153.5			no			Katrina Dlugosch			
+HU-1-8	yellow starthistle	Centaurea	solstitialis	NA	native	HU-1					Hungary	Katrina Dlugosch							no	454-Ti					497	185.3			no			Katrina Dlugosch			
+HU-2-10	yellow starthistle	Centaurea	solstitialis	NA	native	HU-2					Hungary	Katrina Dlugosch							no	454-Ti			2/10/2010	CGB	510	297.9			no			Katrina Dlugosch	region 2	Z5	
+RO-1-6	yellow starthistle	Centaurea	solstitialis	NA	native	RO-1					Romania	Katrina Dlugosch							no	454-Ti			"2010-07-14, 2009-09-11"	GQ	420	189.6			no			Katrina Dlugosch			
+RO-5-10	yellow starthistle	Centaurea	solstitialis	NA	native	RO-5					Romania	Katrina Dlugosch							no	454-Ti			3/23/2010	CGB	507	292.5			no			Katrina Dlugosch	region 1	Z6	
+TK-1-3	yellow starthistle	Centaurea	solstitialis	NA	native	TK-1					Turkey	Katrina Dlugosch							no	454-FLX					252	24.7			no			Katrina Dlugosch			
+TK-1-5	yellow starthistle	Centaurea	solstitialis	NA	native	TK-1					Turkey	Katrina Dlugosch							no	454-Ti			"2010-07-08, 2009-08-27"	GQ	365	159.5			no			Katrina Dlugosch			
+TK-2-3	yellow starthistle	Centaurea	solstitialis	NA	native	TK-2					Turkey	Katrina Dlugosch							no	454-FLX					259	17.1			no			Katrina Dlugosch			
+TK-2-4	yellow starthistle	Centaurea	solstitialis	NA	native	TK-2					Turkey	Katrina Dlugosch							no	454-FLX					267	15.7			no			Katrina Dlugosch			
+TK-3-2	yellow starthistle	Centaurea	solstitialis	NA	native	TK-3					Turkey	Katrina Dlugosch							no	454-FLX					195	11.4			no			Katrina Dlugosch			
+TK-5-4	yellow starthistle	Centaurea	solstitialis	NA	native	TK-5					Turkey	Katrina Dlugosch							no	454-FLX/TI					420	430.7			no			Katrina Dlugosch			
+TK-5-9	yellow starthistle	Centaurea	solstitialis	NA	native	TK-5					Turkey	Katrina Dlugosch							no	454-Ti			11/24/2009	CGB	509	252.1			no			Katrina Dlugosch	region 2	Y3	
+280808-2	Canada thistle	Cirsium	arvense		native	280808	leaf	female plant			"Lugoj, Romania"			"Lat -37.39, Long -64.08"	Standard					Illumina						2995			no						
+	Maltese star thistle	Centaurea	melitensis																										no			Katrina Dlugosch			
+DK_TR001	diffuse knapweed	Centaurea	diffusa	NA	native	TR001	leaf	large/pre-bolting	Summer 2008	"A. Guggisberg, F. Bretagnolle, L. Zeltner"	"Kirklarelì, Turkey"	Kathryn Turner		"latitude 41.45, longitude 27.14"	"cDNA Normalized, double-stranded"				no	454	fasta	qual	10/19/2010	DHMRI		183			no	silo: /data/raid5part1/weeds/Raw	DK_TR001-1L_qual_and_fna_files.tar.txt (from GPQXSCG02_qual_and_fna_files.tar.txt)	Nolan Kane	region 2	"9, TR001 1L 2"	
+DK_US022	diffuse knapweed	Centaurea	diffusa	NA	introduced	US022	leaf	large/pre-bolting	2002	Robin Marrs	"Roosevelt, WA, USA"	Kathryn Turner		"latitude 45.44, longitude -120.12"	"cDNA Normalized, double-stranded"				no	454	fasta	qual	11/1/2010	DHMRI		308			no	silo: /data/raid5part1/weeds/Raw	"DK_US022-31E.fna, DK_US022-31E.qual (from 2010_11_01_qual_fna_files.tar.txt(2.TCA. -region2?))"	Nolan Kane	region 2	"10,US022 31E 2"	
+GNV8ASA01	giant ragweed	Ambrosia	trifida		introduced		"Roots, Leaves, Flower buds, Mature Flowers"	adult			"Jilin, Jilin, China"	Qian Yu		"latitude 43.50, longitude 126.32"	"Normalized, double-stranded"				no	454	sff	sff	9/15/2010	DHMRI		221			no	silio: /data/raid5part1/weeds/Raw	GNV8ASA01.tar.txt find second run		region 1	JL6.1	
+GNV8ASA02	giant ragweed	Ambrosia	trifida		introduced		"Roots, Leaves, Flower buds, Mature Flowers"	adult			"Dengta, Liaoning, China"	Qian Yu		"latitude 41.25, longitude 123. 20"	"Normalized, double-stranded"				no	454	sff	sff	9/15/2010	DHMRI		95			no	silio: /data/raid5part1/weeds/Raw	GNV8ASA02.tar.txt		region 2	DT7.5	
+GNV8ASA03	giant ragweed	Ambrosia	trifida		native		"Roots, Leaves, Flower buds, Mature Flowers"	adult			"Kampsville, IL, USA"	Qian Yu		"latitude 39.16, longitude 90.37"	"Normalized, double-stranded"				no	454	sff	sff	9/15/2010	DHMRI		81			no	silio: /data/raid5part1/weeds/Raw	GNV8ASA03.tar.txt		region 3	MK1.4	
+GNV8ASA04	giant ragweed	Ambrosia	trifida		native		"Roots, Leaves, Flower buds, Mature Flowers"	adult			"Bloomington, IN, USA"	Qian Yu		"latitude 39.92, longitude 86.31"	"Normalized, double-stranded"				no	454	sff	sff	9/15/2010	DHMRI		77			no	silio: /data/raid5part1/weeds/Raw	GNV8ASA04.tar.txt		region 4	BP17.7	
+Hann_ISI	common sunflower	Helianthus	annuus		introduced	Hann_ISI	leaves/stem	seedling			"Ma'ayan Tzvi, Israel"			"latitude 32.33, longitude 34.56"	"Normalized, double-stranded"				no	454						446			no						
+KN-ON	Canada thistle	Cirsium	arvense		introduced	KN-ON	leaf	male plant			"Richmond Hill, ON, Canada"			"latitude 43.95, longitude -79.56"	Standard				no	Illumina						2988			no						
+NW-22-1-M	Canada thistle	Cirsium	arvense		introduced	NW-22-1-M	"Roots, Leaves, Flower buds, Mature flowers"	female plant			"Fargo, ND, USA"	Alessia Guggisberg		"latitude 46.93, longitude -96.86"	"Normalized, double-stranded"				no	454	fasta	qual	2009-10-29 and 2009-11-24	CGB		1411			no	silio: /data/raid5part1/weeds/Raw	"NW-22-1-M-flw.fna, NW-22-1-M-flw.qual, NW-22-1-M-leaf.fna, NW-22-1-M-leaf.qual (flowers from 2009-10-29-region2, leaf from 2009-11-25 region1)"		"Flower 1, leaf 2"		
+PI407602	jeweled distaff thistle	Carthamus	oxyacanthus		weedy		"Roots, Leaves, Flower buds, Mature flowers"	adult			"38 km north of crossroad just west of Mardin, Turkey"				"Normalized, double-stranded"				no	454	fasta	qual	11/22/2010	DHMRI		125			no	silio: /data/raid5part1/weeds/Raw	PI407602a_qual_and_fna.tar.gz.txt (from 2010-10-19Region1_qual_and_fna_files.tar.gz.txt) and PI407602b_qual_and_fna.tar.gz.txt (from 2010_11_22_Region1_fna_qual_files.tar.gz.txt)	Stephanie Pearl from Jburke lab	region 1		
+SAW-3	common sunflower	Helianthus	annuus		introduced	SAW-3	leaves/stem	seedling			"Port Augusta, Australia"			"latitude 32.29, longitude 137.47"	Normalized				no	illumina						1063			no						
+Cni		Cnicothamnus	lorentzii									Edward E. Schilling								454			"03-24-10, 04-05-10"	DHMRI					no	silio: /data/raid5part1/nonweeds/raw		Mike Barker	"region 1, 1"		
+guayule	guayule	Parthenium	argentatum									David Still								454			"03-24-10, 04-05-10, 07-07-10"	DHMRI					no	silio: /data/raid5part1/nonweeds/raw		Mike Barker	"region 2, 2, 1"		Y
+RC4		Guizotia	scabra		wild progenitor							Loren								454	"sff, fna"	"sff, qual"	11/3/2010	DHMRI					no	silio: /data/raid5part1/nonweeds/raw	RC4_sff_files.tar.txt (was 2010_11_03_sff_files.tar.txt)	Kay Hodgins	1 and 2	RC4	Y
+Sta		Stevia	rebaudiana									Loren								454	"sff, fna"	"sff, qual"	11/5/2010	DHMRI					no	silio: /data/raid5part1/nonweeds/raw	Sta_sff_files.tar.txt (was 2010_11_05_sff_files.tar.txt )		1 and 2		Y
+c2	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								454	"sff, fna"	"sff, qual"	3/25 +3/29	CGP					no	silio: /data/raid5part1/nonweeds/raw	"c2.fna, c2.qual, c2.sff, c2b.fna, c2b.qual, c2b.sff (RomanescoC3.fastq?)"	Davide Scaglione	region 2	"Romanesco C3 clone, C2"	
+cpgf3	cultivated cardoon	Cynara	cardunculus	altilis	cultivated							Davide Scaglione from Knapp lab								454	"sff, fna"	"sff, qual"	4/29/2010	CGP					no	silio: /data/raid5part1/nonweeds/raw	"compositae.fna, compositae.qual, compositae.sff (Altilis.fastq ?)"	Davide Scaglione	region 1	"Altilis A41 clone, F3"	
+cgpf4	wild cardoon	Cynara	cardunculus	sylvestris	wild progenitor							Davide Scaglione from Knapp lab								454	"sff, fna"	"sff, qual"	7/20/2010	CGP					no	silio: /data/raid5part1/nonweeds/raw	"cgpf4.fna, cgpf4.qual, cgpf4.sff (Sylvestris.fastq)"	Davide Scaglione	region 1	"Creta 4, Sylvestris, F4"	
+Sylvestris	wild cardoon	Cynara	cardunculus	sylvestris	wild progenitor							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"SylvestrisL23_1.fastq, SylvestrisL23_2.fastq"	Davide Scaglione			
+Blanco	cultivated cardoon	Cynara	cardunculus	altilis	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"Blanco_1.fastq, Blanco_2.fastq"	Davide Scaglione			
+GobboNizza	cultivated cardoon	Cynara	cardunculus	altilis	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"GobboNizza_1.fastq, GobboNizza_2.fastq?"	Davide Scaglione			
+RomanescoZor	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"RomanescoZor_1.fastq, RomanescoZor_2.fastq?"	Davide Scaglione			
+SpinosoSardo	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"SpinosoSardo_1.fastq, SpinosoSardo_2.fastq"	Davide Scaglione			
+ViolettoChioggia	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"ViolettoChioggia_1.fastq, ViolettoChioggia_2.fastq"	Davide Scaglione			
+ViolettoPugliese	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"ViolettoPugliese_1.fastq, ViolettoPugliese_2.fastq"	Davide Scaglione			
+Imperial	cultivated globe artichoke	Cynara	cardunculus	scolymus	cultivated							Davide Scaglione from Knapp lab								illumina			6/10/2012	DHMRI	76 bp PE				no	silio: /data/raid5part1/nonweeds/raw	"Imperial_1.fastq, Imperial_2.fastq"	Davide Scaglione			
+CHI-2418	chicory	Cichorium	intybus		wild	PI 652028				USDA	"Krasnodar, Russian Federation Maintained by the North Central Regional PI Station"				cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode8	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode8	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"CHI-2418_R1.fq.bz2, CHI-2418_R2.fq.bz2"			CIA	Y
+CHI-Witloof	chicory	Cichorium	intybus		cultivar Witloof	PI 504468				USDA	Germany				cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode7	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode7	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"CHI-Witloof_R1.fq.bz2, CHI-Witloof_R2.fq.bz2"			CIB	Y
+Yacon	Yacon	Smallanthus	sonchifolius		cultivated																								no	silio: /data/raid5part1/nonweeds/raw	"Y14.fna, Y14.qual, Y710.fna, Y710.qual"				Y
+CHE-24285	endive	Cichorium	endivia	pumilum	wild	PI 652029				USDA	Pakistan				cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode6	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode6	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"CHE-24285_R1.fq.bz2, CHE-24285_R2.fq.bz2"			CHA	
+CHE-3178	endive	Cichorium	endivia	endivia	cultivar var. latifolium	PI 503595				USDA	"Germany (Comment: Donor: E. Benary, Erfurt) Bordeaux"				cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane2_barcode5	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane2_barcode5	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"CHE-3178_R1.fq.bz2, CHE-3178_R2.fq.bz2"			CHB	
+CAP-5		Carthamus	palastinus		wild progenitor																								no	silio: /data/raid5part1/nonweeds/raw	"CAP-5.fna, CAP-5.qual (from 2010_11_01_qual_fna_files.tar.txt(1.TCA. -region1?)"				
+Acicarpha		Acicarpha	spathulata																										no						
+Scaevola		Scaevola	aemula																										no						
+Nymphoides		Nymphoides	peltata																										no						
+Platycodon		Platycodon	grandiflorus																										no						
+Iva		Iva													cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode4	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode4	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"Iva_R1.fq.bz2, Iva_R2.fq.bz2"				Y
+Dahlia		Dahlia								Loren									no	illumina									no	silio: /data/raid5part1/nonweeds/raw	"Dahlia_buds_flowers_leaves_1.fq, Dahlia_buds_flowers_leaves_2.fq"				Y
+Echinacea		Echinacea	angustifolia		wild	PI 421331				USDA	"Oklahoma, United States, Section 24, T19N, R2W, Logan County"			"Lat 36.1, Long -97.3667"	cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode1	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode1	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"Echinacea_R1.fq.bz2, Echinacea_R2.fq.bz2"				Y
+GLEB-21149	chrysanthemum	Glebionis	segetum		ornamental?	PI 586603				USDA	France				cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode11	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode11	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"GLEB-21149_R1.fq.bz2, GLEB-21149_R2.fq.bz2"				Y
+GLEB-25383	chrysanthemum	Glebionis	segetum		wild	PI 641689				USDA	"Porto, Portugal, Between Lordelo do Ouro and Porto, Douro Litoral Province"			"Lat 41.15, Long –8.633"	cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode12	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode12	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"GLEB-25383_R1.fq.bz2, GLEB-25383_R2.fq.bz2"				Y
+Leontodon		Leontodon													cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode10	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode10	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"Leontodon_R1.fq.bz2, Leontodon_R2.fq.bz2"				Y
+Noug-101103	noug	Guizotia	abyssinica		cultivated															illumina									no	silio: /data/raid5part1/nonweeds/raw	c101103_trimmed.fq (trimmed- ask Nolan if right file)				
+Noug-101108	noug	Guizotia	abyssinica		cultivated															illumina									no	silio: /data/raid5part1/nonweeds/raw	c101108_trimmed.fq (trimmed- ask Nolan if right file)				
+noug.unigenes	noug	Guizotia	abyssinica		cultivated															sanger															
+TUB-2047	Jerusalem artichoke	Helianthus	tuberosus		wild	PI 547230				USDA	"Ohio, United States, Along edge of swampy area of roadside ditch, clay soil"			"Lat 40.73, Long-84.017"	cDNA non normalized	standard illumina multiplexing sample preparation protocol		D0CL5ACXX_Lane3_barcode9	no	illumina	fq.bz2	fastq (Phred+64)	fall 2011	indiana	100 bp PE		Lane3_barcode9	standard illumina	no	silio: /data/raid5part1/nonweeds/raw	"TUB-2047_R1.fq, TUB-2047_R2.fq"				Y
+TR001_1L	diffuse knapweed	Centaurea	diffusa	NA	native	TR001	leaf	large/pre-bolting	Summer 2008	"A. Guggisberg, F. Bretagnolle, L. Zeltner"	"Kirklarelì, Turkey"	Kathryn Turner		"latitude 41.45, longitude 27.14"	WGS				no	Illumina	fastq.gz	fastq (Phred+33)	4/15/2013	GQ	100 bp PE				no	silo: data/raid5part4/genomicsOfSunflower/KATHRYN_HISEQ	"HI.0767.002.Index_1.TR001_1L_R1.fastq.gz, HI.0767.002.Index_1.TR001_1L_R2.fastq.gz,  HI.0767.001.Index_1.TR001_1L_R2.fastq.gz,  HI.0767.001.Index_1.TR001_1L_R1.fastq.gz"	Evan Morien			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			

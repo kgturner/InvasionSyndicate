@@ -1,0 +1,54 @@
+name	object_id
+Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175
+Centaurea solstitialis.1046	Centaurea solstitialis subsp. adamii (Willd.) Nyman	31045127
+Centaurea solstitialis.8441	Centaurea solstitialis L.	467678
+Cirsium arvense	Cirsium arvense (L.) Scop.	468373
+Centaurea melitensis	Centaurea melitensis L.	467679
+Centaurea diffusa	Centaurea diffusa Lam.	467784
+Ambrosia trifida	Ambrosia trifida L.	468221
+Helianthus annuus	Helianthus annuus L.	468106
+Carthamus oxyacanthus	Carthamus oxyacanthus not found	Carthamus oxyacanthus not found
+Cnicothamnus lorentzii	Cnicothamnus lorentzii not found	Cnicothamnus lorentzii not found
+Parthenium argentatum	Parthenium argentatum not found	Parthenium argentatum not found
+Guizotia scabra	Guizotia scabra not found	Guizotia scabra not found
+Stevia rebaudiana	Stevia rebaudiana not found	Stevia rebaudiana not found
+Cynara cardunculus	Cynara cardunculus L.	467498
+Cichorium intybus	Cichorium intybus L.	467862
+Smallanthus sonchifolius	Smallanthus sonchifolius not found	Smallanthus sonchifolius not found
+Cichorium endivia	Cichorium endivia L.	488332
+Carthamus palastinus	Carthamus palastinus not found	Carthamus palastinus not found
+Acicarpha spathulata	Acicarpha spathulata not found	Acicarpha spathulata not found
+Scaevola aemula	Scaevola aemula not found	Scaevola aemula not found
+Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364
+Platycodon grandiflorus	Platycodon grandiflorus not found	Platycodon grandiflorus not found
+Echinacea angustifolia	Echinacea angustifolia not found	Echinacea angustifolia not found
+Glebionis segetum	Glebionis segetum (L.) Fourr.	469138
+Guizotia abyssinica	Guizotia abyssinica (L. f.) Cass.	467296
+Helianthus tuberosus	Helianthus tuberosus L.	468029
+Helianthus argophyllus	Helianthus argophyllus not found	Helianthus argophyllus not found
+Helianthus anomalus	Helianthus anomalus not found	Helianthus anomalus not found
+Helianthus bolanderi	Helianthus bolanderi not found	Helianthus bolanderi not found
+Helianthus ciliaris	Helianthus ciliaris not found	Helianthus ciliaris not found
+Helianthus debilis.2686	Helianthus debilis Nutt.	468125
+Helianthus debilis.2687	Helianthus debilis subsp. cucumerifolius (Torr. & A. Gray) Heiser	1277477
+Helianthus deserticola	Helianthus deserticola not found	Helianthus deserticola not found
+Helianthus exilis	Helianthus exilis not found	Helianthus exilis not found
+Helianthus paradoxus	Helianthus paradoxus not found	Helianthus paradoxus not found
+Helianthus petiolaris	Helianthus petiolaris Nutt.	467986
+Helianthus praecox	Helianthus praecox not found	Helianthus praecox not found
+Helianthus winterii	Helianthus winterii not found	Helianthus winterii not found
+Iva annua	Iva annua not found	Iva annua not found
+Dahlia hybrida	Dahlia hybrida not found	Dahlia hybrida not found
+Leontodon taraxacoides	Leontodon taraxacoides not found	Leontodon taraxacoides not found
+Carthamus tinctorius	Carthamus tinctorius L.	488433
+Centaurea maculosa	Centaurea maculosa not found	Centaurea maculosa not found
+Gerbera hybrid	Gerbera hybrid not found	Gerbera hybrid not found
+Lactuca perennis	Lactuca perennis L.	6229476
+Lactuca saligna	Lactuca saligna L.	468143
+Lactuca sativa	Lactuca sativa L.	468144
+Lactuca serriola	Lactuca serriola L.	468149
+Lactuca virosa	Lactuca virosa L.	486948
+Taraxacum kok-saghyz	Taraxacum kok-saghyz not found	Taraxacum kok-saghyz not found
+Taraxacum officinale	Taraxacum officinale not found	Taraxacum officinale not found
+Zinnia elegans	Zinnia elegans Jacq.	8724193
+Barnadesia spinosa	Barnadesia spinosa not found	Barnadesia spinosa not found

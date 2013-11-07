@@ -67,6 +67,8 @@ spplist2 <- unique(spplist1) #ditch duplicates
 spplist2 <- spplist2[-c(40:59, 63:64,69,71,75:76,78)] #ditch empties, non-identical duplicates, genus only
 
 write(spplist2,"specieslist.txt")
+
+spplist2 <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 ########check status in GISD database (issg.org)
 
 library(devtools)
@@ -95,6 +97,8 @@ out2[27:28,]$located_in <- "lab_seq_inventory"
 
 
 write.table(out2, "GISDclassification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+
+gisdinfo<- read.table("GISDclassification_species.txt", header=T, sep="\t", quote='"')
 
 ######search other db?
 library(devtools)
@@ -127,3 +131,91 @@ write.table(iscout2, "eol_isc_species.txt", row.names=TRUE, col.names=TRUE, sep=
 write.table(daisieout2, "eol_daisie_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 write.table(i3nout2, "eol_i3n_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 write.table(gisdout2, "eol_gisd_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+
+gris <- read.table("eol_gris_species.txt", header=T, sep="\t", quote='"')
+isc <- read.table("eol_isc_species.txt", header=T, sep="\t", quote='"')
+daisie <- read.table("eol_daisie_species.txt", header=T, sep="\t", quote='"')
+i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
+gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
+
+####combine all the databases###
+head(gisdinfo)
+head(gisd)
+
+colnames(daisie)[2] <- "daisie_id"
+colnames(gisd)[2] <- "gisd_id"
+colnames(gris)[2] <- "gris_id"
+colnames(i3n)[2] <- "i3n_id"
+colnames(isc)[2] <- "isc_id"
+
+
+setdiff(rownames(gisd), rownames(gris))
+setdiff(rownames(gisd), rownames(i3n))
+setdiff(rownames(gisd), rownames(isc))
+setdiff(rownames(gisd), rownames(daisie))
+
+gisd$species <- rownames(gisd)
+gris$species <- rownames(gris)
+i3n$species <- rownames(i3n)
+isc$species <- rownames(isc)
+daisie$species <- rownames(daisie)
+
+gisd <- gisd[2:3]
+gris <- gris[2:3]
+i3n <- i3n[2:3]
+isc <- isc[2:3]
+daisie <- daisie[2:3]
+
+
+# status <- cbind(gisd,gris$gris_id, i3n$i3n_id, isc$isc_id)
+status <- merge(gisd, gris, all=TRUE)
+setdiff(i3n$species, status$species)
+status <- merge(status, i3n, all=TRUE)
+status <- merge(status, isc, all=TRUE)
+
+# status$species <- rownames(status)
+status <- merge(status, daisie, all=TRUE)
+status <- merge(status, gisdinfo, all=TRUE)
+
+write.table(status, "classification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+write.csv(status, "classification_species.csv", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+
+#scored by eye in excel
+
+status<- read.table("classification_species.txt", header=T, sep="\t", quote='"')
+
+#########make a tree############
+library(taxize)
+
+spptree <- spplist2[-c(17,38,36)] #didn't find H. winterii, Dahlia, Carthamus palastinus
+spptree <- c(spptree, "Dahlia")
+
+statustree <- status[c(1,8:9)]
+statustree$color <- "red"
+statustree[statustree$status=="not weedy",]$color <- "green"
+
+# statustree <- statustree[order(statustree$species)==order(tree$tip.lable),]
+
+tree <- phylomatic_tree(taxa=spptree)
+tree$tip.label <- taxize_capwords(tree$tip.label)
+# tree$tip.label <- paste(taxize_capwords(tree$tip.label), status$status)
+plot(tree, cex =0.75)
+
+tiporder <- tree$tip.label
+tiporder <- gsub("_", " ",tiporder)
+
+statustree <- statustree[-c(6,35),] #H winterii, Carthamus palastinus
+
+# library(plyr)
+# statustree <- revalue(statustree$species, "Dahlia hybrida"="Dahlia")
+
+levels(statustree$species)[levels(statustree$species)=="Dahlia hybrida"] <- "Dahlia"
+statustree <- statustree[match(tiporder, statustree$species),]
+
+pdf("InvSyn_speciestree.pdf", useDingbats=FALSE, height=10)
+
+plot(tree, cex =0.75, tip.color=statustree$color, show.node.label=TRUE)
+legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
+title(main="Species with lab and CGP seq data")
+
+dev.off()

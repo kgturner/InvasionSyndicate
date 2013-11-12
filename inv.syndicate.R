@@ -187,7 +187,7 @@ status<- read.table("classification_species.txt", header=T, sep="\t", quote='"')
 #########make a tree############
 library(taxize)
 
-spptree <- spplist2[-c(17,38,36)] #didn't find H. winterii, Dahlia, Carthamus palastinus
+spptree <- spplist2[-c(17,38,36)] #didn't find H. winterii, Dahlia, Carthamus palastinus in Phylomatic
 spptree <- c(spptree, "Dahlia")
 
 statustree <- status[c(1,8:9)]

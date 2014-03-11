@@ -110,6 +110,7 @@ library(XML)
 ?eol_invasive()
 
 #eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
+#as of 2/18/14 added to .Rprofile as eolAPIkey 
 
 grisout <- eol_invasive(name=spplist2, dataset='gris',,key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
 grisout2 <- do.call(rbind,grisout)

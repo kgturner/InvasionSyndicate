@@ -111,21 +111,27 @@ library(XML)
 
 #eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
 #as of 2/18/14 added to .Rprofile as eolAPIkey 
+spplist <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 
-grisout <- eol_invasive(name=spplist2, dataset='gris',,key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
-grisout2 <- do.call(rbind,grisout)
+gisdinfo <- gisd_isinvasive(spplist)
+
+grisout <- eol_invasive(name=spplist2, dataset='gris',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+grisout2 <- do.call(cbind,grisout)
+head(grisout2)
 
 iscout <- eol_invasive(name=spplist2, dataset='isc',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
-iscout2 <- do.call(rbind, iscout)
+iscout2 <- do.call(cbind, iscout)
 
 daisieout <- eol_invasive(name=spplist2, dataset='daisie',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
-daisieout2 <- do.call(rbind, daisieout)
+daisieout2 <- do.call(cbind, daisieout)
 
 i3nout <- eol_invasive(name=spplist2, dataset='i3n',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
-i3nout2 <- do.call(rbind, i3nout)
+i3nout2 <- do.call(cbind, i3nout)
 
 gisdout <- eol_invasive(name=spplist2, dataset='gisd',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
-gisdout2 <- do.call(rbind,gisdout)
+gisdout2 <- do.call(cbind,gisdout)
+
+
 
 write.table(grisout2, "eol_gris_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 write.table(iscout2, "eol_isc_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
@@ -140,28 +146,33 @@ i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
 gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
 
 ####combine all the databases###
-head(gisdinfo)
+# head(gisdinfo)
 head(gisd)
 
-colnames(daisie)[2] <- "daisie_id"
-colnames(gisd)[2] <- "gisd_id"
-colnames(gris)[2] <- "gris_id"
-colnames(i3n)[2] <- "i3n_id"
-colnames(isc)[2] <- "isc_id"
+colnames(daisie)[4] <- "in_daisie"
+colnames(gisd)[4] <- "in_gisd"
+# colnames(gris)[2] <- "gris_id"
+colnames(i3n)[4] <- "in_i3n"
+colnames(isc)[4] <- "in_isc"
 
 
-setdiff(rownames(gisd), rownames(gris))
-setdiff(rownames(gisd), rownames(i3n))
-setdiff(rownames(gisd), rownames(isc))
-setdiff(rownames(gisd), rownames(daisie))
+# # setdiff(rownames(gisd), rownames(gris))
+# setdiff(rownames(gisd), rownames(i3n))
+# setdiff(rownames(gisd), rownames(isc))
+# setdiff(rownames(gisd), rownames(daisie))
+# 
+# gisd$species <- rownames(gisd)
+# # gris$species <- rownames(gris)
+# i3n$species <- rownames(i3n)
+# isc$species <- rownames(isc)
+# daisie$species <- rownames(daisie)
 
-gisd$species <- rownames(gisd)
-gris$species <- rownames(gris)
-i3n$species <- rownames(i3n)
-isc$species <- rownames(isc)
-daisie$species <- rownames(daisie)
+gisd_isinvasive("Taraxacum officinale")
 
-gisd <- gisd[2:3]
+eol_invasive(name="Taraxacum officinale", dataset='gisd',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+
+
+gisd <- subset(gisd, !is.na(eol_object_id))
 gris <- gris[2:3]
 i3n <- i3n[2:3]
 isc <- isc[2:3]
@@ -169,17 +180,19 @@ daisie <- daisie[2:3]
 
 
 # status <- cbind(gisd,gris$gris_id, i3n$i3n_id, isc$isc_id)
-status <- merge(gisd, gris, all=TRUE)
-setdiff(i3n$species, status$species)
-status <- merge(status, i3n, all=TRUE)
+# status <- merge(gisd, gris, all=TRUE)
+# setdiff(i3n$species, status$species)
+status <- merge(gisd, i3n, all=TRUE)
 status <- merge(status, isc, all=TRUE)
 
 # status$species <- rownames(status)
 status <- merge(status, daisie, all=TRUE)
-status <- merge(status, gisdinfo, all=TRUE)
+colnames(gisdinfo)[2] <- "gisdinfo"
+
+status <- merge(status, gisdinfo, all.x=TRUE, by.y="species", by.x="searched_name")
 
 write.table(status, "classification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.csv(status, "classification_species.csv", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+write.csv(status, "classification_species.csv", row.names=TRUE, quote=F)
 
 #scored by eye in excel
 
@@ -220,3 +233,92 @@ legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
 title(main="Species with lab and CGP seq data")
 
 dev.off()
+
+#####recategorize###########
+#eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
+#as of 2/18/14 added to .Rprofile as eolAPIkey 
+spplist <- scan("specieslist.txt", what="character",skip=0, sep="\t", quote='"')
+
+sppres <- tnrs(query=spplist, source="iPlant_TNRS")
+
+# spplist <- subset(spplist,!%in%c("Centaurea maculosa", "Carthamus palastinus"))
+# spplist[[c("Centaurea maculosa", "Carthamus palastinus")]] <-NULL
+spplist <- spplist[-c(17,41)]
+spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus","Taraxacum campylodes")
+
+allout <- eol_invasive(name=spplist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+
+####new trees####
+library(taxize)
+
+spplist_tree <- spplist[-c(52)] #T. officinale and T. campylodes redundant
+
+###refresh database searches
+allout$weed_db <- "red"
+allout[is.na(allout$eol_object_id),]$weed_db <- "green"
+tail(allout)
+
+# statustree <- statustree[order(statustree$species)==order(tree$tip.lable),]
+
+tree_weed_db <- phylomatic_tree(taxa=spplist_tree)
+tree_weed_db$tip.label <- taxize_capwords(tree_weed_db$tip.label)
+# tree$tip.label <- paste(taxize_capwords(tree$tip.label), status$status)
+plot(tree_weed_db, cex =0.75)
+
+tiporder <- tree_weed_db$tip.label
+tiporder <- gsub("_", " ",tiporder)
+
+# statustree <- statustree[-c(6,35),] #H winterii, Carthamus palastinus
+
+# library(plyr)
+# statustree <- revalue(statustree$species, "Dahlia hybrida"="Dahlia")
+
+# levels(allout$species)[levels(statustree$species)=="Dahlia hybrida"] <- "Dahlia"
+allout <- allout[match(tiporder, allout$searched_name),]
+
+# pdf("InvSyn_speciestree.pdf", useDingbats=FALSE, height=10)
+
+plot(tree_weed_db, cex =0.75, tip.color=allout$weed_db, show.node.label=TRUE)
+legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
+title(main="Species with lab and CGP seq data")
+
+# dev.off()
+
+###platform tree
+seqdata <- read.csv("AssemblyList_Nov29 - AssemblyList_Nov29.csv.csv", header=T, sep=",", quote='"')
+head(seqdata)
+
+seqdata <- subset(seqdata, INCLUDE==1,select=c(ASSEMBLY_ID, GENUS,SPECIES,NEWNAME,subspecies, type,read_tech))
+head(seqdata)
+seqdata$name <- paste(seqdata$GENUS, seqdata$SPECIES)
+seqdata[seqdata$name=="Centaurea maculosa",]$name <- "Centaurea stoebe"
+
+# allout$platform <- "blue"
+# allout[is.na(allout$eol_object_id),]$weed_db <- "green"
+# tail(allout)
+# 
+# # statustree <- statustree[order(statustree$species)==order(tree$tip.lable),]
+# 
+# tree_weed_db <- phylomatic_tree(taxa=spplist_tree)
+# tree_weed_db$tip.label <- taxize_capwords(tree_weed_db$tip.label)
+# # tree$tip.label <- paste(taxize_capwords(tree$tip.label), status$status)
+# plot(tree_weed_db, cex =0.75)
+# 
+# tiporder <- tree_weed_db$tip.label
+# tiporder <- gsub("_", " ",tiporder)
+# 
+# # statustree <- statustree[-c(6,35),] #H winterii, Carthamus palastinus
+# 
+# # library(plyr)
+# # statustree <- revalue(statustree$species, "Dahlia hybrida"="Dahlia")
+# 
+# # levels(allout$species)[levels(statustree$species)=="Dahlia hybrida"] <- "Dahlia"
+# allout <- allout[match(tiporder, allout$searched_name),]
+# 
+# # pdf("InvSyn_speciestree.pdf", useDingbats=FALSE, height=10)
+# 
+# plot(tree_weed_db, cex =0.75, tip.color=allout$weed_db, show.node.label=TRUE)
+# legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
+# title(main="Species with lab and CGP seq data")
+# 
+# # dev.off()

@@ -1,52 +1,52 @@
-name	object_id
-Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175
-Centaurea solstitialis	Centaurea solstitialis L.	467678
-Cirsium arvense	Cirsium arvense (L.) Scop.	468373
-Centaurea melitensis	Centaurea melitensis L.	467679
-Centaurea diffusa	Centaurea diffusa Lam.	467784
-Ambrosia trifida	Ambrosia trifida L.	468221
-Helianthus annuus	Helianthus annuus not found	Helianthus annuus not found
-Carthamus oxyacanthus	Carthamus oxyacanthus not found	Carthamus oxyacanthus not found
-Cnicothamnus lorentzii	Cnicothamnus lorentzii not found	Cnicothamnus lorentzii not found
-Parthenium argentatum	Parthenium argentatum not found	Parthenium argentatum not found
-Guizotia scabra	Guizotia scabra not found	Guizotia scabra not found
-Stevia rebaudiana	Stevia rebaudiana not found	Stevia rebaudiana not found
-Cynara cardunculus	Cynara cardunculus L.	467498
-Cichorium intybus	Cichorium intybus not found	Cichorium intybus not found
-Smallanthus sonchifolius	Smallanthus sonchifolius not found	Smallanthus sonchifolius not found
-Cichorium endivia	Cichorium endivia not found	Cichorium endivia not found
-Carthamus palastinus	Carthamus palastinus not found	Carthamus palastinus not found
-Acicarpha spathulata	Acicarpha spathulata not found	Acicarpha spathulata not found
-Scaevola aemula	Scaevola aemula not found	Scaevola aemula not found
-Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364
-Platycodon grandiflorus	Platycodon grandiflorus not found	Platycodon grandiflorus not found
-Echinacea angustifolia	Echinacea angustifolia not found	Echinacea angustifolia not found
-Glebionis segetum	Glebionis segetum not found	Glebionis segetum not found
-Guizotia abyssinica	Guizotia abyssinica not found	Guizotia abyssinica not found
-Helianthus tuberosus	Helianthus tuberosus L.	468029
-Helianthus argophyllus	Helianthus argophyllus not found	Helianthus argophyllus not found
-Helianthus anomalus	Helianthus anomalus not found	Helianthus anomalus not found
-Helianthus bolanderi	Helianthus bolanderi not found	Helianthus bolanderi not found
-Helianthus ciliaris	Helianthus ciliaris DC.	468127
-Helianthus debilis	Helianthus debilis not found	Helianthus debilis not found
-Helianthus deserticola	Helianthus deserticola not found	Helianthus deserticola not found
-Helianthus exilis	Helianthus exilis not found	Helianthus exilis not found
-Helianthus paradoxus	Helianthus paradoxus not found	Helianthus paradoxus not found
-Helianthus petiolaris	Helianthus petiolaris not found	Helianthus petiolaris not found
-Helianthus praecox	Helianthus praecox not found	Helianthus praecox not found
-Helianthus winterii	Helianthus winterii not found	Helianthus winterii not found
-Iva annua	Iva annua not found	Iva annua not found
-Dahlia hybrida	Dahlia hybrida not found	Dahlia hybrida not found
-Leontodon taraxacoides	Leontodon taraxacoides not found	Leontodon taraxacoides not found
-Carthamus tinctorius	Carthamus tinctorius not found	Carthamus tinctorius not found
-Centaurea maculosa	Centaurea maculosa not found	Centaurea maculosa not found
-Gerbera hybrid	Gerbera hybrid not found	Gerbera hybrid not found
-Lactuca perennis	Lactuca perennis not found	Lactuca perennis not found
-Lactuca saligna	Lactuca saligna not found	Lactuca saligna not found
-Lactuca sativa	Lactuca sativa not found	Lactuca sativa not found
-Lactuca serriola	Lactuca serriola not found	Lactuca serriola not found
-Lactuca virosa	Lactuca virosa not found	Lactuca virosa not found
-Taraxacum kok-saghyz	Taraxacum kok-saghyz not found	Taraxacum kok-saghyz not found
-Taraxacum officinale	Taraxacum officinale not found	Taraxacum officinale not found
-Zinnia elegans	Zinnia elegans not found	Zinnia elegans not found
-Barnadesia spinosa	Barnadesia spinosa not found	Barnadesia spinosa not found
+searched_name	name	eol_object_id	db
+1	Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175	isc
+2	Centaurea solstitialis	Centaurea solstitialis L.	467678	isc
+3	Cirsium arvense	Cirsium arvense (L.) Scop.	468373	isc
+4	Centaurea melitensis	Centaurea melitensis L.	467679	isc
+5	Centaurea diffusa	Centaurea diffusa Lam.	467784	isc
+6	Ambrosia trifida	Ambrosia trifida L.	468221	isc
+7	Helianthus annuus	Helianthus annuus	NaN	isc
+8	Carthamus oxyacanthus	Carthamus oxyacanthus	NaN	isc
+9	Cnicothamnus lorentzii	Cnicothamnus lorentzii	NaN	isc
+10	Parthenium argentatum	Parthenium argentatum	NaN	isc
+11	Guizotia scabra	Guizotia scabra	NaN	isc
+12	Stevia rebaudiana	Stevia rebaudiana	NaN	isc
+13	Cynara cardunculus	Cynara cardunculus L.	467498	isc
+14	Cichorium intybus	Cichorium intybus	NaN	isc
+15	Smallanthus sonchifolius	Smallanthus sonchifolius	NaN	isc
+16	Cichorium endivia	Cichorium endivia	NaN	isc
+17	Carthamus palastinus	Carthamus palastinus	NaN	isc
+18	Acicarpha spathulata	Acicarpha spathulata	NaN	isc
+19	Scaevola aemula	Scaevola aemula	NaN	isc
+20	Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364	isc
+21	Platycodon grandiflorus	Platycodon grandiflorus	NaN	isc
+22	Echinacea angustifolia	Echinacea angustifolia	NaN	isc
+23	Glebionis segetum	Glebionis segetum	NaN	isc
+24	Guizotia abyssinica	Guizotia abyssinica	NaN	isc
+25	Helianthus tuberosus	Helianthus tuberosus L.	468029	isc
+26	Helianthus argophyllus	Helianthus argophyllus	NaN	isc
+27	Helianthus anomalus	Helianthus anomalus	NaN	isc
+28	Helianthus bolanderi	Helianthus bolanderi	NaN	isc
+29	Helianthus ciliaris	Helianthus ciliaris DC.	468127	isc
+30	Helianthus debilis	Helianthus debilis	NaN	isc
+31	Helianthus deserticola	Helianthus deserticola	NaN	isc
+32	Helianthus exilis	Helianthus exilis	NaN	isc
+33	Helianthus paradoxus	Helianthus paradoxus	NaN	isc
+34	Helianthus petiolaris	Helianthus petiolaris	NaN	isc
+35	Helianthus praecox	Helianthus praecox	NaN	isc
+36	Helianthus winterii	Helianthus winterii	NaN	isc
+37	Iva annua	Iva annua	NaN	isc
+38	Dahlia hybrida	Dahlia hybrida	NaN	isc
+39	Leontodon taraxacoides	Leontodon taraxacoides	NaN	isc
+40	Carthamus tinctorius	Carthamus tinctorius	NaN	isc
+41	Centaurea maculosa	Centaurea maculosa	NaN	isc
+42	Gerbera hybrid	Gerbera hybrid	NaN	isc
+43	Lactuca perennis	Lactuca perennis	NaN	isc
+44	Lactuca saligna	Lactuca saligna	NaN	isc
+45	Lactuca sativa	Lactuca sativa	NaN	isc
+46	Lactuca serriola	Lactuca serriola	NaN	isc
+47	Lactuca virosa	Lactuca virosa	NaN	isc
+48	Taraxacum kok-saghyz	Taraxacum kok-saghyz	NaN	isc
+49	Taraxacum officinale	Taraxacum officinale	NaN	isc
+50	Zinnia elegans	Zinnia elegans	NaN	isc
+51	Barnadesia spinosa	Barnadesia spinosa	NaN	isc

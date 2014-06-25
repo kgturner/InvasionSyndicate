@@ -1,54 +1,54 @@
-name	object_id
-Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175
-Centaurea solstitialis.1046	Centaurea solstitialis subsp. adamii (Willd.) Nyman	31045127
-Centaurea solstitialis.8441	Centaurea solstitialis L.	467678
-Cirsium arvense	Cirsium arvense (L.) Scop.	468373
-Centaurea melitensis	Centaurea melitensis L.	467679
-Centaurea diffusa	Centaurea diffusa Lam.	467784
-Ambrosia trifida	Ambrosia trifida L.	468221
-Helianthus annuus	Helianthus annuus L.	468106
-Carthamus oxyacanthus	Carthamus oxyacanthus not found	Carthamus oxyacanthus not found
-Cnicothamnus lorentzii	Cnicothamnus lorentzii not found	Cnicothamnus lorentzii not found
-Parthenium argentatum	Parthenium argentatum not found	Parthenium argentatum not found
-Guizotia scabra	Guizotia scabra not found	Guizotia scabra not found
-Stevia rebaudiana	Stevia rebaudiana not found	Stevia rebaudiana not found
-Cynara cardunculus	Cynara cardunculus L.	467498
-Cichorium intybus	Cichorium intybus L.	467862
-Smallanthus sonchifolius	Smallanthus sonchifolius not found	Smallanthus sonchifolius not found
-Cichorium endivia	Cichorium endivia L.	488332
-Carthamus palastinus	Carthamus palastinus not found	Carthamus palastinus not found
-Acicarpha spathulata	Acicarpha spathulata not found	Acicarpha spathulata not found
-Scaevola aemula	Scaevola aemula not found	Scaevola aemula not found
-Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364
-Platycodon grandiflorus	Platycodon grandiflorus not found	Platycodon grandiflorus not found
-Echinacea angustifolia	Echinacea angustifolia not found	Echinacea angustifolia not found
-Glebionis segetum	Glebionis segetum (L.) Fourr.	469138
-Guizotia abyssinica	Guizotia abyssinica (L. f.) Cass.	467296
-Helianthus tuberosus	Helianthus tuberosus L.	468029
-Helianthus argophyllus	Helianthus argophyllus not found	Helianthus argophyllus not found
-Helianthus anomalus	Helianthus anomalus not found	Helianthus anomalus not found
-Helianthus bolanderi	Helianthus bolanderi not found	Helianthus bolanderi not found
-Helianthus ciliaris	Helianthus ciliaris not found	Helianthus ciliaris not found
-Helianthus debilis.2686	Helianthus debilis Nutt.	468125
-Helianthus debilis.2687	Helianthus debilis subsp. cucumerifolius (Torr. & A. Gray) Heiser	1277477
-Helianthus deserticola	Helianthus deserticola not found	Helianthus deserticola not found
-Helianthus exilis	Helianthus exilis not found	Helianthus exilis not found
-Helianthus paradoxus	Helianthus paradoxus not found	Helianthus paradoxus not found
-Helianthus petiolaris	Helianthus petiolaris Nutt.	467986
-Helianthus praecox	Helianthus praecox not found	Helianthus praecox not found
-Helianthus winterii	Helianthus winterii not found	Helianthus winterii not found
-Iva annua	Iva annua not found	Iva annua not found
-Dahlia hybrida	Dahlia hybrida not found	Dahlia hybrida not found
-Leontodon taraxacoides	Leontodon taraxacoides not found	Leontodon taraxacoides not found
-Carthamus tinctorius	Carthamus tinctorius L.	488433
-Centaurea maculosa	Centaurea maculosa not found	Centaurea maculosa not found
-Gerbera hybrid	Gerbera hybrid not found	Gerbera hybrid not found
-Lactuca perennis	Lactuca perennis L.	6229476
-Lactuca saligna	Lactuca saligna L.	468143
-Lactuca sativa	Lactuca sativa L.	468144
-Lactuca serriola	Lactuca serriola L.	468149
-Lactuca virosa	Lactuca virosa L.	486948
-Taraxacum kok-saghyz	Taraxacum kok-saghyz not found	Taraxacum kok-saghyz not found
-Taraxacum officinale	Taraxacum officinale not found	Taraxacum officinale not found
-Zinnia elegans	Zinnia elegans Jacq.	8724193
-Barnadesia spinosa	Barnadesia spinosa not found	Barnadesia spinosa not found
+searched_name	name	eol_object_id	db
+1	Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175	daisie
+2	Centaurea solstitialis	Centaurea solstitialis subsp. adamii (Willd.) Nyman	31045127	daisie
+3	Centaurea solstitialis	Centaurea solstitialis L.	467678	daisie
+4	Cirsium arvense	Cirsium arvense (L.) Scop.	468373	daisie
+5	Centaurea melitensis	Centaurea melitensis L.	467679	daisie
+6	Centaurea diffusa	Centaurea diffusa Lam.	467784	daisie
+7	Ambrosia trifida	Ambrosia trifida L.	468221	daisie
+8	Helianthus annuus	Helianthus annuus L.	468106	daisie
+9	Carthamus oxyacanthus	Carthamus oxyacanthus	NaN	daisie
+10	Cnicothamnus lorentzii	Cnicothamnus lorentzii	NaN	daisie
+11	Parthenium argentatum	Parthenium argentatum	NaN	daisie
+12	Guizotia scabra	Guizotia scabra	NaN	daisie
+13	Stevia rebaudiana	Stevia rebaudiana	NaN	daisie
+14	Cynara cardunculus	Cynara cardunculus L.	467498	daisie
+15	Cichorium intybus	Cichorium intybus L.	467862	daisie
+16	Smallanthus sonchifolius	Smallanthus sonchifolius	NaN	daisie
+17	Cichorium endivia	Cichorium endivia L.	488332	daisie
+18	Carthamus palastinus	Carthamus palastinus	NaN	daisie
+19	Acicarpha spathulata	Acicarpha spathulata	NaN	daisie
+20	Scaevola aemula	Scaevola aemula	NaN	daisie
+21	Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364	daisie
+22	Platycodon grandiflorus	Platycodon grandiflorus	NaN	daisie
+23	Echinacea angustifolia	Echinacea angustifolia	NaN	daisie
+24	Glebionis segetum	Glebionis segetum (L.) Fourr.	469138	daisie
+25	Guizotia abyssinica	Guizotia abyssinica (L. f.) Cass.	467296	daisie
+26	Helianthus tuberosus	Helianthus tuberosus L.	468029	daisie
+27	Helianthus argophyllus	Helianthus argophyllus	NaN	daisie
+28	Helianthus anomalus	Helianthus anomalus	NaN	daisie
+29	Helianthus bolanderi	Helianthus bolanderi	NaN	daisie
+30	Helianthus ciliaris	Helianthus ciliaris	NaN	daisie
+31	Helianthus debilis	Helianthus debilis Nutt.	468125	daisie
+32	Helianthus debilis	Helianthus debilis subsp. cucumerifolius (Torr. & A. Gray) Heiser	1277477	daisie
+33	Helianthus deserticola	Helianthus deserticola	NaN	daisie
+34	Helianthus exilis	Helianthus exilis	NaN	daisie
+35	Helianthus paradoxus	Helianthus paradoxus	NaN	daisie
+36	Helianthus petiolaris	Helianthus petiolaris Nutt.	467986	daisie
+37	Helianthus praecox	Helianthus praecox	NaN	daisie
+38	Helianthus winterii	Helianthus winterii	NaN	daisie
+39	Iva annua	Iva annua	NaN	daisie
+40	Dahlia hybrida	Dahlia hybrida	NaN	daisie
+41	Leontodon taraxacoides	Leontodon taraxacoides	NaN	daisie
+42	Carthamus tinctorius	Carthamus tinctorius L.	488433	daisie
+43	Centaurea maculosa	Centaurea maculosa	NaN	daisie
+44	Gerbera hybrid	Gerbera hybrid	NaN	daisie
+45	Lactuca perennis	Lactuca perennis	NaN	daisie
+46	Lactuca saligna	Lactuca saligna L.	468143	daisie
+47	Lactuca sativa	Lactuca sativa L.	468144	daisie
+48	Lactuca serriola	Lactuca serriola L.	468149	daisie
+49	Lactuca virosa	Lactuca virosa L.	486948	daisie
+50	Taraxacum kok-saghyz	Taraxacum kok-saghyz	NaN	daisie
+51	Taraxacum officinale	Taraxacum officinale	NaN	daisie
+52	Zinnia elegans	Zinnia elegans Jacq.	8724193	daisie
+53	Barnadesia spinosa	Barnadesia spinosa	NaN	daisie

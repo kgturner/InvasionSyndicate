@@ -1,0 +1,55 @@
+ASSEMBLY_ID	GENUS	SPECIES	NEWNAME	subspecies	type	read_tech	name
+8	CICH_INTY.CSA1	Cichorium	intybus	Cicint1		wild	Illumina	Cichorium intybus
+9	LACT_SALI.CSA1	Lactuca	saligna	Lacsal1				Lactuca saligna
+10	TARA_OFFI.CSA1	Taraxacum	officinale	Taroff			Sanger	Taraxacum officinale
+11	LACT_SATI.CST1	Lactuca	sativa	Lacsat2				Lactuca sativa
+12	LACT_VIRO.CST1	Lactuca	virosa	Lacvir2				Lactuca virosa
+13	platycodon	Platycodon	grandiflorus	Plagra				Platycodon grandiflorus
+14	CART_TINC.CSA1	Carthamus	tinctorius	Cartin		cultivar	Sanger	Carthamus tinctorius
+15	CENT_MACU.CSA1	Centaurea	maculosa	Cenmac	micranthos (tetraploid)	introduced	Sanger	Centaurea maculosa
+16	LACT_PERE.CSA1	Lactuca	perennis	Lacper1				Lactuca perennis
+17	LACT_VIRO.CSA1	Lactuca	virosa	Lacvir1			Sanger	Lactuca virosa
+18	TARA_KOK-.CSA1	Taraxacum	kok-saghyz	Tarkok				Taraxacum kok-saghyz
+19	LACT_SERR.CST1	Lactuca	serriola	Lacser2			Illumina?	Lactuca serriola
+21	AA8-20	Ambrosia	artemisiifolia	Ambart1		introduced	454	Ambrosia artemisiifolia
+22	HU1-11	Ambrosia	artemisiifolia	Ambart2		native	454	Ambrosia artemisiifolia
+23	GNV8ASA01	Ambrosia	trifida	Ambtri1		introduced	454	Ambrosia trifida
+24	GNV8ASA02	Ambrosia	trifida	Ambtri2		introduced	454	Ambrosia trifida
+25	GNV8ASA03	Ambrosia	trifida	Ambtri3		native	454	Ambrosia trifida
+26	GNV8ASA04	Ambrosia	trifida	Ambtri4		native	454	Ambrosia trifida
+27	PI407602	Carthamus	oxyacanthus	Caroxy		weedy	454	Carthamus oxyacanthus
+28	DK_TR001-1L	Centaurea	diffusa	Cendif1		native	454	Centaurea diffusa
+29	DK_US022-31E	Centaurea	diffusa	Cendif2		introduced	454	Centaurea diffusa
+30	AR-13-24	Centaurea	solstitialis	Censol2		introduced	454-Ti	Centaurea solstitialis
+35	280808-2	Cirsium	arvense	Cirarv1		native	Illumina	Cirsium arvense
+36	KN-ON	Cirsium	arvense	Cirarv2		introduced	Illumina	Cirsium arvense
+37	NW-22-1-M	Cirsium	arvense	Cirarv3		introduced	454	Cirsium arvense
+38	GBE	Cynara	cardunculus	Cyncar1	 scolymus			Cynara cardunculus
+39	SYL	Cynara	cardunculus	Cyncar2	sylvestris			Cynara cardunculus
+40	ATL	Cynara	cardunculus	Cyncar3	altilis			Cynara cardunculus
+41	Dahlia	Dahlia	hybrida	Dahhyb		ornamental	ILLUMINA Illumina Genome Analyzer II	Dahlia hybrida
+42	Echinacea	Echinacea	angustifolia	Echang		wild	ILLUMINA Illumina HiSeq 2000	Echinacea angustifolia
+43	GLEB-21149	Glebionis	segetum	Gleseg1			ILLUMINA Illumina HiSeq 2000	Glebionis segetum
+44	GLEB-25383	Glebionis	segetum	Gleseg2		wild	ILLUMINA Illumina HiSeq 2000	Glebionis segetum
+45	RC4	Guizotia	scabra	Guisca	schimperii	wild relative	_LS454 454 GS FLX Titanium	Guizotia scabra
+46	Hann_ISI	Helianthus	annuus	Helann2		introduced		Helianthus annuus
+47	SAW-3	Helianthus	annuus	Helann3				Helianthus annuus
+48	NEW	Helianthus	annuus	Helann4				Helianthus annuus
+49	TEW	Helianthus	annuus	Helann5				Helianthus annuus
+50	TUB-2047	Helianthus	tuberosus	Heltub2		wild	ILLUMINA Illumina HiSeq 2000	Helianthus tuberosus
+51	Iva	Iva	annua	Ivaann			ILLUMINA Illumina HiSeq 2000	Iva annua
+53	guayule	Parthenium	argentatum	Pararg			_LS454 454 GS FLX Titanium	Parthenium argentatum
+54	Yacon	Smallanthus	sonchifolius	Smason			_LS454 454 GS FLX Titanium	Smallanthus sonchifolius
+55	Sta	Stevia	rebaudiana	Stereb2			_LS454 454 GS FLX Titanium	Stevia rebaudiana
+56	PAL	Carthamus	palastinus					Carthamus palaestinus
+57	GERB_HYBR.CSA1	Gerbera	hybrid	Gerhyb				Gerbera hybrid
+58	STEV_REBA.CSA1	Stevia	rebaudiana	Stereb1				Stevia rebaudiana
+59	ZINN_ELEG.CSA1	Zinnia	elegans	Zinele1				Zinnia elegans
+60	acicarpha_mira_cap	Acicarpha	spathulata	Acispa				Acicarpha spathulata
+61	cnicothamnus	Cnicothamnus	lorentzii	Cinlor				Cnicothamnus lorentzii
+63	CENT_SOLS.CSA1	Centaurea	solstitialis	Censol1				Centaurea solstitialis
+64	CICH_ENDI.CSA1	Cichorium	endivia	Cicend1	pumilum	wild	Illumina	Cichorium endivia
+66	LACT_SATI.CSA1	Lactuca	sativa	Lacsat1				Lactuca sativa
+67	LACT_SERR.CSA1	Lactuca	serriola	Lacser1				Lactuca serriola
+68	LACT_PERE.CST1	Lactuca	perennis	Lacper2				Lactuca perennis
+69	LACT_SALI.CST1	Lactuca	saligna	Lacsal2				Lactuca saligna

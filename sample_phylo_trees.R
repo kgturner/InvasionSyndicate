@@ -3,7 +3,7 @@
 library(ape)
 library(geiger)
 
-MyTree <- read.tree("RAxML_species_tree") #newick format
+MyTree <- read.tree("RAxML_species_tree") #newick format - unrooted
 
 plot.phylo(MyTree)
 plot.phylo(MyTree, type="cladogram")

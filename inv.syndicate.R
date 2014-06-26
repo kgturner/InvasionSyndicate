@@ -1,7 +1,15 @@
 #Invasion Syndicate#
 #11/1/13
 
+library(devtools)
+install_github("taxize_", "ropensci")
+
+library(taxize)
+library(XML)
+
 #Categorizing species we have access to
+
+####make species list####
 #lab inventory
 #sunflower relatives
 sunflrel <- read.table("Seq_info_sunflr_relatives.txt", header=T, sep="\t", quote='"')
@@ -69,14 +77,8 @@ spplist2 <- spplist2[-c(40:59, 63:64,69,71,75:76,78)] #ditch empties, non-identi
 write(spplist2,"specieslist.txt")
 
 spplist2 <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
-########check status in GISD database (issg.org)
-
-library(devtools)
-install_github("taxize_", "ropensci")
-
-library(taxize)
-library(XML)
-
+####check status in databases####
+###check status in GISD database (issg.org)
 
 out <- gisd_isinvasive(spplist2)
 out2 <- out
@@ -145,7 +147,7 @@ daisie <- read.table("eol_daisie_species.txt", header=T, sep="\t", quote='"')
 i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
 gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
 
-####combine all the databases###
+####combine all the databases####
 # head(gisdinfo)
 head(gisd)
 
@@ -244,9 +246,12 @@ sppres <- tnrs(query=spplist, source="iPlant_TNRS")
 # spplist <- subset(spplist,!%in%c("Centaurea maculosa", "Carthamus palastinus"))
 # spplist[[c("Centaurea maculosa", "Carthamus palastinus")]] <-NULL
 spplist <- spplist[-c(17,41)]
-spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus","Taraxacum campylodes")
+spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus") #"Taraxacum campylodes"
+write(spplist,"specieslist.txt")
 
 allout <- eol_invasive(name=spplist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+
+
 
 ####new trees####
 library(taxize)

@@ -245,13 +245,22 @@ sppres <- tnrs(query=spplist, source="iPlant_TNRS")
 
 # spplist <- subset(spplist,!%in%c("Centaurea maculosa", "Carthamus palastinus"))
 # spplist[[c("Centaurea maculosa", "Carthamus palastinus")]] <-NULL
-spplist <- spplist[-c(17,41)]
-spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus") #"Taraxacum campylodes"
+# spplist <- spplist[-c(17,41)]
+# spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus") #"Taraxacum campylodes"
 write(spplist,"specieslist.txt")
 
 allout <- eol_invasive(name=spplist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
 
+#checking synonyms - #shouldn't Taroff, Cenmac, Helarg, Leotar be red/weeds?
+synlist <- c("Taraxacum campylodes", "Centaurea stoebe", "Centaurea bieberisteinii", "Helianthus argophyllis",
+             "Leontodon nudicaulis", "Crepis nudicaulis", "Hyoseris taraxacoides", "Taraxacum vulgare",
+             "Leontodon taraxacum", "Leontodon vulgare", "Taraxacum taraxacum")
+synout <- eol_invasive(name=synlist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+#yes, Cenmac is red/weed
 
+gisd_isinvasive(synlist)
+gisd_isinvasive(c("Taraxacum officinale", "Helianthus argophyllus", "Leontodon taraxacoides"))
+#taraxacum officinale should be red/weed
 
 ####new trees####
 library(taxize)
@@ -259,8 +268,8 @@ library(taxize)
 spplist_tree <- spplist[-c(52)] #T. officinale and T. campylodes redundant
 
 ###refresh database searches
-allout$weed_db <- "red"
-allout[is.na(allout$eol_object_id),]$weed_db <- "green"
+allout$db <- "red"
+allout[is.na(allout$eol_object_id),]$db <- "green"
 tail(allout)
 
 # statustree <- statustree[order(statustree$species)==order(tree$tip.lable),]

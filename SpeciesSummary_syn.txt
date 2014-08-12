@@ -1,0 +1,99 @@
+searched_name	name	eol_object_id	db
+1	Cryptocarpha spathulata	Cryptocarpha spathulata	NA	all
+2	Ambrosia elatior	Ambrosia elatior	NA	all
+3	Ambrosia glandulosa	Ambrosia glandulosa	NA	all
+4	Ambrosia maritima	Ambrosia maritima	NA	all
+5	Ambrosia monophylla	Ambrosia monophylla	NA	all
+6	Ambrosia paniculata	Ambrosia paniculata	NA	all
+7	Ambrosia aptera	Ambrosia aptera	NA	all
+8	Carthamus oxyacantha	Carthamus oxyacantha	NA	all
+9	Acosta diffusa	Acosta diffusa	NA	all
+10	Centaurea microcalathina	Centaurea microcalathina	NA	all
+11	Centaurea parviflora	Centaurea parviflora	NA	all
+12	Centaurea stoebe ssp. micranthos	Centaurea stoebe ssp. micranthos	NA	all
+13	Centaurea stoebe	Centaurea stoebe L.	2877020	all
+14	Centaurea stoebe	Centaurea stoebe subsp. australis (Pancic ex A.Kern.) Greuter	482437	all
+15	Centaurea bieberisteinii	Centaurea bieberisteinii	NA	all
+16	Leucantha solstitialis	Leucantha solstitialis	NA	all
+17	Cichorium crispum	Cichorium crispum	NA	all
+18	Cichorium byzantinum	Cichorium byzantinum	NA	all
+19	Cichorium cicorea	Cichorium cicorea	NA	all
+20	Cichorium glabratum	Cichorium glabratum	NA	all
+21	Cichorium glaucum	Cichorium glaucum	NA	all
+22	Cichorium perenne	Cichorium perenne	NA	all
+23	Cichorium rigidum	Cichorium rigidum	NA	all
+24	Cichorium sylvestre	Cichorium sylvestre	NA	all
+25	Breea arvensis	Breea arvensis	NA	all
+26	Carduus arvensis	Carduus arvensis	NA	all
+27	Cephalonoplos arvense	Cephalonoplos arvense	NA	all
+28	Cirsium incanum	Cirsium incanum	NA	all
+29	Cirsium lanatum	Cirsium lanatum	NA	all
+30	Cirsium ochrolepideum	Cirsium ochrolepideum	NA	all
+31	Cirsium setosum	Cirsium setosum	NA	all
+32	Cnicus arvensis	Cnicus arvensis	NA	all
+33	Cnicus lanatus	Cnicus lanatus	NA	all
+34	Serratula arvensis	Serratula arvensis	NA	all
+35	Serratula spinosa	Serratula spinosa	NA	all
+36	Breea incana	Breea incana	NA	all
+37	Lefrovia rhaponticoides	Lefrovia rhaponticoides	NA	all
+38	Cynara scolymus	Cynara scolymus L.	467499	all
+39	Brauneria angustifolia	Brauneria angustifolia	NA	all
+40	Echinacea pallida var. strigosa	Echinacea pallida var. strigosa	NA	all
+41	Chrysanthemum segetum	Chrysanthemum segetum	NA	all
+42	Chrysanthemum spatiosum	Chrysanthemum spatiosum	NA	all
+43	Chrysanthemum umbrosum	Chrysanthemum umbrosum	NA	all
+44	Matricaria segetum	Matricaria segetum	NA	all
+45	Pyrethrum segetum	Pyrethrum segetum	NA	all
+46	Pyrethrum umbrosum	Pyrethrum umbrosum	NA	all
+47	Xantophtalmum segetum	Xantophtalmum segetum	NA	all
+48	Helianthus aridus	Helianthus aridus	NA	all
+49	Helianthus jaegeri	Helianthus jaegeri	NA	all
+50	Helianthus lenticularis	Helianthus lenticularis	NA	all
+51	Helianthus macrocarpus	Helianthus macrocarpus	NA	all
+52	Helianthus multiflorus	Helianthus multiflorus L.	468059	all
+53	Helianthus ovatus	Helianthus ovatus	NA	all
+54	Helianthus argophyllis	Helianthus argophyllis	NA	all
+55	Helianthus integrifolius	Helianthus integrifolius	NA	all
+56	Helianthus patens	Helianthus patens	NA	all
+57	Helianthus praecox	Helianthus praecox	NA	all
+58	Helianthus canescens	Helianthus canescens	NA	all
+59	Helianthus canus	Helianthus canus	NA	all
+60	Helianthus esculentus	Helianthus esculentus	NA	all
+61	Helianthus tomentosus	Helianthus tomentosus	NA	all
+62	Iva ciliata	Iva ciliata	NA	all
+63	Iva caudata	Iva caudata	NA	all
+64	Ambrosia pitcheri	Ambrosia pitcheri	NA	all
+65	Lactuca altaica	Lactuca altaica	NA	all
+66	Lactuca scariola	Lactuca scariola	NA	all
+67	Lactuca virosa	Lactuca virosa L.	486948	all
+68	Crepis nudicaulis	Crepis nudicaulis	NA	all
+69	Hyoseris taraxacoides	Hyoseris taraxacoides	NA	all
+70	Leontodon nudicaulis	Leontodon nudicaulis	NA	all
+71	Limnanthemum peltatum	Limnanthemum peltatum	NA	all
+72	Nymphoides nymphaeoides	Nymphoides nymphaeoides	NA	all
+73	Campanula glauca	Campanula glauca	NA	all
+74	Campanula grandiflora	Campanula grandiflora	NA	all
+75	Platycodon autumalis	Platycodon autumalis	NA	all
+76	Platycodon autumnalis	Platycodon autumnalis	NA	all
+77	Platycodon chinensis	Platycodon chinensis	NA	all
+78	Platycodon glaucus	Platycodon glaucus	NA	all
+79	Platycodon sinensis	Platycodon sinensis	NA	all
+80	Platycodon grandiflorum	Platycodon grandiflorum	NA	all
+81	Polymnia edulis	Polymnia edulis	NA	all
+82	Polymnia sonchifolia	Polymnia sonchifolia	NA	all
+83	Eupatorium rebaudianum	Eupatorium rebaudianum	NA	all
+84	Taraxacum brevicorniculatum	Taraxacum brevicorniculatum	NA	all
+85	Leontodon taraxacum	Leontodon taraxacum	NA	all
+86	Leontodon vulgare	Leontodon vulgare	NA	all
+87	Taraxacum dens-leonis	Taraxacum dens-leonis	NA	all
+88	Taraxacum mexicanum 	Taraxacum mexicanum 	NA	all
+89	Taraxacum retroflexum	Taraxacum retroflexum	NA	all
+90	Taraxacum subspathulatum	Taraxacum subspathulatum	NA	all
+91	Taraxacum sylvanicum	Taraxacum sylvanicum R. Doll	578234	all
+92	Taraxacum taraxacum	Taraxacum taraxacum	NA	all
+93	Taraxacum tenejapense 	Taraxacum tenejapense 	NA	all
+94	Taraxacum vulgare	Taraxacum vulgare	NA	all
+95	Taraxacum campylodes	Taraxacum campylodes	NA	all
+96	Crassina elegans	Crassina elegans	NA	all
+97	Zinnia australis	Zinnia australis	NA	all
+98	Zinnia violacea	Zinnia violacea	NA	all

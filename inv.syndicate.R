@@ -250,14 +250,31 @@ sppres <- tnrs(query=spplist, source="iPlant_TNRS")
 write(spplist,"specieslist.txt")
 
 allout <- eol_invasive(name=spplist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+write.table(allout, "SpeciesSummary.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
 #checking synonyms - #shouldn't Taroff, Cenmac, Helarg, Leotar be red/weeds?
-synlist <- c("Taraxacum campylodes", "Centaurea stoebe", "Centaurea bieberisteinii", "Helianthus argophyllis",
-             "Leontodon nudicaulis", "Crepis nudicaulis", "Hyoseris taraxacoides", "Taraxacum vulgare",
-             "Leontodon taraxacum", "Leontodon vulgare", "Taraxacum taraxacum")
+synlist <- c("Cryptocarpha spathulata","Ambrosia elatior","Ambrosia glandulosa",  "Ambrosia maritima","Ambrosia monophylla","Ambrosia paniculata",
+             "Ambrosia aptera","Carthamus oxyacantha", "Acosta diffusa","Centaurea microcalathina", "Centaurea parviflora",
+             "Centaurea stoebe ssp. micranthos","Centaurea stoebe", "Centaurea bieberisteinii","Leucantha solstitialis","Cichorium crispum", "Cichorium byzantinum",
+             "Cichorium cicorea","Cichorium glabratum", "Cichorium glaucum","Cichorium perenne","Cichorium rigidum","Cichorium sylvestre",
+             "Breea arvensis","Carduus arvensis", "Cephalonoplos arvense", "Cirsium incanum", "Cirsium lanatum","Cirsium ochrolepideum", "Cirsium setosum",
+             "Cnicus arvensis","Cnicus lanatus", "Serratula arvensis",  "Serratula spinosa",   "Breea incana",
+             "Lefrovia rhaponticoides","Cynara scolymus","Brauneria angustifolia",     "Echinacea pallida var. strigosa","Chrysanthemum segetum",
+             "Chrysanthemum spatiosum", "Chrysanthemum umbrosum", "Matricaria segetum", "Pyrethrum segetum","Pyrethrum umbrosum", "Xantophtalmum segetum",
+            "Helianthus aridus","Helianthus jaegeri","Helianthus lenticularis","Helianthus macrocarpus","Helianthus multiflorus","Helianthus ovatus",
+             "Helianthus argophyllis","Helianthus integrifolius",   "Helianthus patens",       "Helianthus praecox",    "Helianthus canescens",    "Helianthus canus",
+             "Helianthus esculentus","Helianthus tomentosus","Iva ciliata",   "Iva caudata","Ambrosia pitcheri", "Lactuca altaica","Lactuca scariola","Lactuca virosa",  
+             "Crepis nudicaulis","Hyoseris taraxacoides", "Leontodon nudicaulis","Limnanthemum peltatum","Nymphoides nymphaeoides",
+             "Campanula glauca","Campanula grandiflora","Platycodon autumalis","Platycodon autumnalis", "Platycodon chinensis", "Platycodon glaucus",
+            "Platycodon sinensis",    "Platycodon grandiflorum","Polymnia edulis",       "Polymnia sonchifolia","Eupatorium rebaudianum",
+             "Taraxacum brevicorniculatum","Leontodon taraxacum", "Leontodon vulgare", "Taraxacum dens-leonis","Taraxacum mexicanum ",
+            "Taraxacum retroflexum", "Taraxacum subspathulatum","Taraxacum sylvanicum","Taraxacum taraxacum","Taraxacum tenejapense ",
+            "Taraxacum vulgare",    "Taraxacum campylodes","Crassina elegans",    "Zinnia australis",      "Zinnia violacea"
+)
 synout <- eol_invasive(name=synlist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+write.table(synout, "SpeciesSummary_syn.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 #yes, Cenmac is red/weed
-
+gisd_isinvasive(spplist)
 gisd_isinvasive(synlist)
 gisd_isinvasive(c("Taraxacum officinale", "Helianthus argophyllus", "Leontodon taraxacoides"))
 #taraxacum officinale should be red/weed

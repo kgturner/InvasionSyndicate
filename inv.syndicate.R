@@ -1,13 +1,22 @@
 #Invasion Syndicate#
 #11/1/13
+#Categorizing species we have access to
 
 library(devtools)
-install_github("taxize_", "ropensci")
-
+install_github("taxize_", "rcrossref","ropensci")
 library(taxize)
 library(XML)
+library(rcrossref)
 
-#Categorizing species we have access to
+#eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
+#as of 2/18/14 added to .Rprofile as eolAPIkey
+
+####citations####
+citation(package = 'taxize')[1]
+citation(package = 'taxize')[2]
+
+taxize_cite(fxn="tnrs", what="citation")
+taxize_cite(fxn="eol")
 
 ####make species list####
 #lab inventory
@@ -33,7 +42,7 @@ spplist <- spplist[-c(22:23,26,29)]
 
 spplist <- c(spplist, "Iva annua", "Dahlia hybrida", "Leontodon taraxacoides")
 
-######add species from CGP
+##add species from CGP
 #EST library
 cgp_ESTlib <- read.delim("CGP EST LIBRARY INFO.txt", header=T, sep="\t") #
 row.names(cgp_ESTlib) <- cgp_ESTlib[,1]
@@ -65,11 +74,7 @@ cgp_outgroup <- c("Acicarpha spathulata", "Scaevola aemula","Nymphoides peltata"
 cgp_tree <- c("Barnadesia spinosa", "Chrysanthemum")  
 # other things listed on tree, but not in cgp assembly tables
 
-
-
-#########combine in one list
-
-
+##combine in one list
 spplist1 <- c(spplist, levels(cgp_ESTlib$GENOTYPE),levels(cgp_ESTassembly$sci_name),cgp_wd_assembly,cgp_outgroup,cgp_tree)
 spplist2 <- unique(spplist1) #ditch duplicates
 spplist2 <- spplist2[-c(40:59, 63:64,69,71,75:76,78)] #ditch empties, non-identical duplicates, genus only
@@ -110,9 +115,7 @@ library(taxize)
 library(XML)
 
 ?eol_invasive()
-
-#eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
-#as of 2/18/14 added to .Rprofile as eolAPIkey 
+ 
 spplist <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 
 gisdinfo <- gisd_isinvasive(spplist)
@@ -147,7 +150,7 @@ daisie <- read.table("eol_daisie_species.txt", header=T, sep="\t", quote='"')
 i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
 gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
 
-####combine all the databases####
+##combine all the databases
 # head(gisdinfo)
 head(gisd)
 
@@ -284,7 +287,7 @@ library(taxize)
 
 spplist_tree <- spplist[-c(52)] #T. officinale and T. campylodes redundant
 
-###refresh database searches
+#refresh database searches
 allout$db <- "red"
 allout[is.na(allout$eol_object_id),]$db <- "green"
 tail(allout)
@@ -315,7 +318,7 @@ title(main="Species with lab and CGP seq data")
 
 # dev.off()
 
-###platform tree
+####platform tree####
 seqdata <- read.csv("AssemblyList_Nov29 - AssemblyList_Nov29.csv.csv", header=T, sep=",", quote='"')
 head(seqdata)
 

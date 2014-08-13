@@ -1,0 +1,38 @@
+TraitScore	distbin	genus sp	dist
+-4	HIGH	Ambrosia artemisiifolia	1.525368275
+0	HIGH	Ambrosia trifida	1.156099169
+-1.142857143	NA	Carthamus palaestinus	NA
+0	HIGH	Carthamus tinctorius	0.064623263
+-2	HIGH	Centaurea diffusa	0.332379936
+0	NA	Centaurea maculosa	NA
+1.142857143	HIGH	Centaurea solstitialis	0.670947785
+2	HIGH	Cirsium arvense	1.68213375
+3.428571429	LOW	Cynara cardunculus	-0.00832837
+3.428571429	LOW	Glebionis segetum	-0.544727175
+-4.8	NA	Guizotia scabra	NA
+0	HIGH	Helianthus annuus	1.203626982
+-1.6	LOW	Helianthus ciliaris	-0.767870727
+-8	HIGH	Helianthus petiolaris	0.587309464
+1.142857143	HIGH	Helianthus tuberosus	1.555107003
+0	HIGH	Iva annua	0.005319161
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

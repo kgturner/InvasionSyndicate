@@ -262,6 +262,11 @@ gisd_isinvasive(synlist)
 gisd_isinvasive(c("Taraxacum officinale", "Helianthus argophyllus", "Leontodon taraxacoides"))
 #taraxacum officinale should be red/weed
 
+eol_invasive(c("Carthamus oxyacanthus", "Carthamus palaestinus", "Carthamus oxyacantha"), dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+gisd_isinvasive(c("Carthamus oxyacanthus", "Carthamus palaestinus", "Carthamus oxyacantha"))
+#Caroxy probably should be a weed, but isn't turning up in the databases...
+
+
 ####new trees####
 library(taxize)
 
@@ -336,3 +341,17 @@ seqdata[seqdata$name=="Centaurea maculosa",]$name <- "Centaurea stoebe"
 # title(main="Species with lab and CGP seq data")
 # 
 # # dev.off()
+
+
+
+#####how many asteraceae are invasives?####
+
+Aster <- downstream("Asteraceae", db = c('col','itis'), downto = 'Species')
+
+AsterL <- Aster[[1]]
+
+AsterL2 <- as.vector(unique(AsterL$childtaxa_name))
+
+Asterout <- eol_invasive(name=AsterL2, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6") #count = TRUE,
+
+summary(Asterout)

@@ -1,0 +1,44 @@
+searched_name	name	eol_object_id	db
+1	Ambrosia artemisiifolia	Ambrosia artemisiifolia L.	468175	all
+2	Centaurea solstitialis	Centaurea solstitialis subsp. adamii (Willd.) Nyman	31045127	all
+3	Centaurea solstitialis	Centaurea solstitialis L.	467678	all
+4	Cirsium arvense	Cirsium arvense (L.) Scop.	468373	all
+5	Centaurea diffusa	Centaurea diffusa Lam.	467784	all
+6	Ambrosia trifida	Ambrosia trifida L.	468221	all
+7	Helianthus annuus	Helianthus annuus L.	468106	all
+8	Carthamus oxyacanthus	Carthamus oxyacanthus	NA	all
+9	Cnicothamnus lorentzii	Cnicothamnus lorentzii	NA	all
+10	Parthenium argentatum	Parthenium argentatum	NA	all
+11	Guizotia scabra	Guizotia scabra	NA	all
+12	Stevia rebaudiana	Stevia rebaudiana	NA	all
+13	Cynara cardunculus	Cynara cardunculus L.	467498	all
+14	Cichorium intybus	Cichorium intybus L.	467862	all
+15	Smallanthus sonchifolius	Smallanthus sonchifolius	NA	all
+16	Cichorium endivia	Cichorium endivia L.	488332	all
+17	Acicarpha spathulata	Acicarpha spathulata	NA	all
+18	Scaevola aemula	Scaevola aemula	NA	all
+19	Nymphoides peltata	Nymphoides peltata (S.G. Gmel.) Kuntze	581364	all
+20	Platycodon grandiflorus	Platycodon grandiflorus	NA	all
+21	Echinacea angustifolia	Echinacea angustifolia	NA	all
+22	Glebionis segetum	Glebionis segetum (L.) Fourr.	469138	all
+23	Helianthus tuberosus	Helianthus tuberosus L.	468029	all
+24	Helianthus argophyllus	Helianthus argophyllus	NA	all
+25	Helianthus ciliaris	Helianthus ciliaris DC.	468127	all
+26	Helianthus exilis	Helianthus exilis	NA	all
+27	Helianthus paradoxus	Helianthus paradoxus	NA	all
+28	Helianthus petiolaris	Helianthus petiolaris Nutt.	467986	all
+29	Iva annua	Iva annua	NA	all
+30	Dahlia hybrida	Dahlia hybrida	NA	all
+31	Leontodon taraxacoides	Leontodon taraxacoides	NA	all
+32	Carthamus tinctorius	Carthamus tinctorius L.	488433	all
+33	Gerbera hybrid	Gerbera hybrid	NA	all
+34	Lactuca perennis	Lactuca perennis	NA	all
+35	Lactuca saligna	Lactuca saligna L.	468143	all
+36	Lactuca sativa	Lactuca sativa L.	468144	all
+37	Lactuca serriola	Lactuca serriola L.	468149	all
+38	Lactuca virosa	Lactuca virosa L.	486948	all
+39	Taraxacum kok-saghyz	Taraxacum kok-saghyz	NA	all
+40	Taraxacum officinale	Taraxacum officinale	NA	all
+41	Zinnia elegans	Zinnia elegans Jacq.	8724193	all
+42	Carthamus palaestinus	Carthamus palaestinus	NA	all
+43	Centaurea maculosa	Centaurea maculosa	NA	all

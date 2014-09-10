@@ -375,3 +375,5 @@ AsterL2 <- as.vector(unique(AsterL$childtaxa_name))
 Asterout <- eol_invasive(name=AsterL2, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6") #count = TRUE,
 
 summary(Asterout)
+
+write.table(Asterout, "allAstersWeedStatus_20140909.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)

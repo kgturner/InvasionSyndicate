@@ -379,6 +379,7 @@ summary(Asterout)
 write.table(Asterout, "allAstersWeedStatus_20140909.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
 ####how many us fed weeds are asteraceae?####
+#from Sept 2014
 USinv<- scan(file.choose(), what="list",skip=0, sep="\t", quote='"')#"USinvlist.txt"
 write(USinv,"USinvlist.txt")
 
@@ -388,8 +389,10 @@ USinvFam <- tax_name(query = USinv, get = "family", db = "both", verbose=TRUE)
 USinvFam <- cbind(USinv, USinvFam)
 USinvFam$family <- as.factor(USinvFam$family)
 USinvFam$USinv <- as.factor(USinvFam$USinv)
-USinvFam <- USinvFam[unique(USinvFam$USinv),]
+USinvFam <- unique(USinvFam)
 summary(USinvFam, verbose=TRUE)
+
+write.table(USinvFam, "USinv_family.txt",row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
 ####helianthus####
 Sunfl <- downstream("Helianthus", db = c('col','itis'), downto = 'Species')

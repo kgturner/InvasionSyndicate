@@ -377,3 +377,27 @@ Asterout <- eol_invasive(name=AsterL2, dataset='all',key="70268ca1d5fb6687295ae3
 summary(Asterout)
 
 write.table(Asterout, "allAstersWeedStatus_20140909.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+
+####how many us fed weeds are asteraceae?####
+USinv<- scan(file.choose(), what="list",skip=0, sep="\t", quote='"')#"USinvlist.txt"
+write(USinv,"USinvlist.txt")
+
+USinv <- unique(USinv)
+
+USinvFam <- tax_name(query = USinv, get = "family", db = "both", verbose=TRUE)
+USinvFam <- cbind(USinv, USinvFam)
+USinvFam$family <- as.factor(USinvFam$family)
+USinvFam$USinv <- as.factor(USinvFam$USinv)
+USinvFam <- USinvFam[unique(USinvFam$USinv),]
+summary(USinvFam, verbose=TRUE)
+
+####helianthus####
+Sunfl <- downstream("Helianthus", db = c('col','itis'), downto = 'Species')
+
+SunflL <- Sunfl[[1]]
+
+SunflL2 <- as.vector(unique(SunflL$childtaxa_name))
+
+Sunflout <- eol_invasive(name=SunflL2, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6") #count = TRUE,
+
+summary(Sunflout)

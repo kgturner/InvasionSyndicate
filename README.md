@@ -5,6 +5,12 @@ Code contributing to Hodgins et al., 2014, Comparative genomics in the Asteracea
 
 Hodgins KA, Bock DG, Hahn MA, Heredia SM, Turner KG, Rieseberg LH (2014) Comparative genomics in the Asteraceae reveal little evidence for parallel evolutionary change in invasive taxa. Molecular Ecology, manuscript ID MEC-14-1003.
 
-R code by KGT largely used for the purpose of classifying ~40 species included in comparative genomics dataset, using the taxize package in R. Additional work (not described in paper) addresses traits, synonyms, and phylogenies of those species.
+R code by KGT largely used for the purpose of classifying ~40 species included in comparative genomics dataset, using the taxize package in R. Additional work (not described in paper) addresses traits, synonyms, and phylogenies of those species. Main action included in inv.syndicate.R - producing species lists, querying databases, producing trees.
 
-Other code...?
+Other R files (not included in paper): 
+  WeedScore.R - checking for correlation between "trait score" and distribution. 
+  getting_traits.R - combining trait data with sequence data. 
+  sample_phylo_trees.R - messing around with plot.phylo()
+  Trait_Finder.R - scraping trait data from USDA PLANTS database (by R. Colautti).
+  is.invasive.func.R - other functions for determining invasion status
+  

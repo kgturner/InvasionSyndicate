@@ -82,80 +82,80 @@ spplist2 <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 ####check status in databases####
 ###check status in GISD database (issg.org)
 
-out <- gisd_isinvasive(spplist2)
-out2 <- out
-out2$located_in <- "cgp_tree"
-out2[out2$species %in% as.character(levels(cgp_ESTlib$GENOTYPE)),]$located_in <- "cgp_ESTlib"
-out2[out2$species %in% cgp_outgroup,]$located_in <- "cgp_outgroup"
-out2[out2$species %in% cgp_wd_assembly,]$located_in <- "cgp_wd_assembly"
-out2[out2$species %in% as.character(levels(cgp_ESTassembly$sci_name)),]$located_in <- "cgp_ESTassembly"
-out2[out2$species %in% spplist,]$located_in <- "lab_seq_inventory"
-out2$located_in <- as.factor(out2$located_in)
+#out <- gisd_isinvasive(spplist2)
+#out2 <- out
+#out2$located_in <- "cgp_tree"
+#out2[out2$species %in% as.character(levels(cgp_ESTlib$GENOTYPE)),]$located_in <- "cgp_ESTlib"
+#out2[out2$species %in% cgp_outgroup,]$located_in <- "cgp_outgroup"
+#out2[out2$species %in% cgp_wd_assembly,]$located_in <- "cgp_wd_assembly"
+#out2[out2$species %in% as.character(levels(cgp_ESTassembly$sci_name)),]$located_in <- "cgp_ESTassembly"
+#out2[out2$species %in% spplist,]$located_in <- "lab_seq_inventory"
+#out2$located_in <- as.factor(out2$located_in)
 
 # str(cgp_ESTlib$GENOTYPE)
 # str(unique(sunflrel$sci_name))
 # str(as.character(levels(cgp_ESTlib$GENOTYPE)))
 # str(cgp_outgroup)
 
-out2[27:28,]$located_in <- "lab_seq_inventory"
+#out2[27:28,]$located_in <- "lab_seq_inventory"
 
 
-write.table(out2, "GISDclassification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(out2, "GISDclassification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
-gisdinfo<- read.table("GISDclassification_species.txt", header=T, sep="\t", quote='"')
+#gisdinfo<- read.table("GISDclassification_species.txt", header=T, sep="\t", quote='"')
 
 ######search other db?
-library(devtools)
-install_github("taxize_", "ropensci")
+#library(devtools)
+#install_github("taxize_", "ropensci")
 
-library(taxize)
-library(XML)
+#library(taxize)
+#library(XML)
 
-?eol_invasive()
+#?eol_invasive()
  
-spplist <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
+#spplist <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 
-gisdinfo <- gisd_isinvasive(spplist)
+#gisdinfo <- gisd_isinvasive(spplist)
 
-grisout <- eol_invasive(name=spplist2, dataset='gris')
-grisout2 <- do.call(cbind,grisout)
-head(grisout2)
+#grisout <- eol_invasive(name=spplist2, dataset='gris')
+#grisout2 <- do.call(cbind,grisout)
+#head(grisout2)
 
-iscout <- eol_invasive(name=spplist2, dataset='isc')
-iscout2 <- do.call(cbind, iscout)
+#iscout <- eol_invasive(name=spplist2, dataset='isc')
+#iscout2 <- do.call(cbind, iscout)
 
-daisieout <- eol_invasive(name=spplist2, dataset='daisie')
-daisieout2 <- do.call(cbind, daisieout)
+#daisieout <- eol_invasive(name=spplist2, dataset='daisie')
+#daisieout2 <- do.call(cbind, daisieout)
 
-i3nout <- eol_invasive(name=spplist2, dataset='i3n')
-i3nout2 <- do.call(cbind, i3nout)
+#i3nout <- eol_invasive(name=spplist2, dataset='i3n')
+#i3nout2 <- do.call(cbind, i3nout)
 
-gisdout <- eol_invasive(name=spplist2, dataset='gisd')
-gisdout2 <- do.call(cbind,gisdout)
+#gisdout <- eol_invasive(name=spplist2, dataset='gisd')
+#gisdout2 <- do.call(cbind,gisdout)
 
 
 
-write.table(grisout2, "eol_gris_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.table(iscout2, "eol_isc_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.table(daisieout2, "eol_daisie_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.table(i3nout2, "eol_i3n_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.table(gisdout2, "eol_gisd_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(grisout2, "eol_gris_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(iscout2, "eol_isc_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(daisieout2, "eol_daisie_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(i3nout2, "eol_i3n_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.table(gisdout2, "eol_gisd_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
-gris <- read.table("eol_gris_species.txt", header=T, sep="\t", quote='"')
-isc <- read.table("eol_isc_species.txt", header=T, sep="\t", quote='"')
-daisie <- read.table("eol_daisie_species.txt", header=T, sep="\t", quote='"')
-i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
-gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
+#gris <- read.table("eol_gris_species.txt", header=T, sep="\t", quote='"')
+#isc <- read.table("eol_isc_species.txt", header=T, sep="\t", quote='"')
+#daisie <- read.table("eol_daisie_species.txt", header=T, sep="\t", quote='"')
+#i3n <- read.table("eol_i3n_species.txt", header=T, sep="\t", quote='"')
+#gisd <- read.table("eol_gisd_species.txt", header=T, sep="\t", quote='"')
 
 ##combine all the databases
 # head(gisdinfo)
-head(gisd)
+#head(gisd)
 
-colnames(daisie)[4] <- "in_daisie"
-colnames(gisd)[4] <- "in_gisd"
+#colnames(daisie)[4] <- "in_daisie"
+#colnames(gisd)[4] <- "in_gisd"
 # colnames(gris)[2] <- "gris_id"
-colnames(i3n)[4] <- "in_i3n"
-colnames(isc)[4] <- "in_isc"
+#colnames(i3n)[4] <- "in_i3n"
+#colnames(isc)[4] <- "in_isc"
 
 
 # # setdiff(rownames(gisd), rownames(gris))
@@ -169,72 +169,72 @@ colnames(isc)[4] <- "in_isc"
 # isc$species <- rownames(isc)
 # daisie$species <- rownames(daisie)
 
-gisd_isinvasive("Taraxacum officinale")
+#gisd_isinvasive("Taraxacum officinale")
 
-eol_invasive(name="Taraxacum officinale", dataset='gisd')
+#eol_invasive(name="Taraxacum officinale", dataset='gisd')
 
 
-gisd <- subset(gisd, !is.na(eol_object_id))
-gris <- gris[2:3]
-i3n <- i3n[2:3]
-isc <- isc[2:3]
-daisie <- daisie[2:3]
+#gisd <- subset(gisd, !is.na(eol_object_id))
+#gris <- gris[2:3]
+#i3n <- i3n[2:3]
+#isc <- isc[2:3]
+#daisie <- daisie[2:3]
 
 
 # status <- cbind(gisd,gris$gris_id, i3n$i3n_id, isc$isc_id)
 # status <- merge(gisd, gris, all=TRUE)
 # setdiff(i3n$species, status$species)
-status <- merge(gisd, i3n, all=TRUE)
-status <- merge(status, isc, all=TRUE)
+#status <- merge(gisd, i3n, all=TRUE)
+#status <- merge(status, isc, all=TRUE)
 
 # status$species <- rownames(status)
-status <- merge(status, daisie, all=TRUE)
-colnames(gisdinfo)[2] <- "gisdinfo"
+#status <- merge(status, daisie, all=TRUE)
+#colnames(gisdinfo)[2] <- "gisdinfo"
 
-status <- merge(status, gisdinfo, all.x=TRUE, by.y="species", by.x="searched_name")
+#status <- merge(status, gisdinfo, all.x=TRUE, by.y="species", by.x="searched_name")
 
-write.table(status, "classification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
-write.csv(status, "classification_species.csv", row.names=TRUE, quote=F)
+#write.table(status, "classification_species.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
+#write.csv(status, "classification_species.csv", row.names=TRUE, quote=F)
 
 #scored by eye in excel
 
-status<- read.table("classification_species.txt", header=T, sep="\t", quote='"')
+#status<- read.table("classification_species.txt", header=T, sep="\t", quote='"')
 
 #########make a tree############
-library(taxize)
+#library(taxize)
 
-spptree <- spplist2[-c(17,38,36)] #didn't find H. winterii, Dahlia, Carthamus palastinus in Phylomatic
-spptree <- c(spptree, "Dahlia")
+#spptree <- spplist2[-c(17,38,36)] #didn't find H. winterii, Dahlia, Carthamus palastinus in Phylomatic
+#spptree <- c(spptree, "Dahlia")
 
-statustree <- status[c(1,8:9)]
-statustree$color <- "red"
-statustree[statustree$status=="not weedy",]$color <- "green"
+#statustree <- status[c(1,8:9)]
+#statustree$color <- "red"
+#statustree[statustree$status=="not weedy",]$color <- "green"
 
 # statustree <- statustree[order(statustree$species)==order(tree$tip.lable),]
 
-tree <- phylomatic_tree(taxa=spptree)
-tree$tip.label <- taxize_capwords(tree$tip.label)
+#tree <- phylomatic_tree(taxa=spptree)
+#tree$tip.label <- taxize_capwords(tree$tip.label)
 # tree$tip.label <- paste(taxize_capwords(tree$tip.label), status$status)
-plot(tree, cex =0.75)
+#plot(tree, cex =0.75)
 
-tiporder <- tree$tip.label
-tiporder <- gsub("_", " ",tiporder)
+#tiporder <- tree$tip.label
+#tiporder <- gsub("_", " ",tiporder)
 
-statustree <- statustree[-c(6,35),] #H winterii, Carthamus palastinus
+#statustree <- statustree[-c(6,35),] #H winterii, Carthamus palastinus
 
 # library(plyr)
 # statustree <- revalue(statustree$species, "Dahlia hybrida"="Dahlia")
 
-levels(statustree$species)[levels(statustree$species)=="Dahlia hybrida"] <- "Dahlia"
-statustree <- statustree[match(tiporder, statustree$species),]
+#levels(statustree$species)[levels(statustree$species)=="Dahlia hybrida"] <- "Dahlia"
+#statustree <- statustree[match(tiporder, statustree$species),]
 
-pdf("InvSyn_speciestree.pdf", useDingbats=FALSE, height=10)
+#pdf("InvSyn_speciestree.pdf", useDingbats=FALSE, height=10)
 
-plot(tree, cex =0.75, tip.color=statustree$color, show.node.label=TRUE)
-legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
-title(main="Species with lab and CGP seq data")
+#plot(tree, cex =0.75, tip.color=statustree$color, show.node.label=TRUE)
+#legend("bottomleft", legend=c("Weed", "Not a weed"), fill=c("red","green"))
+#title(main="Species with lab and CGP seq data")
 
-dev.off()
+#dev.off()
 
 #####recategorize###########
 

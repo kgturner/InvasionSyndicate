@@ -8,9 +8,6 @@ library(taxize)
 library(XML)
 library(rcrossref)
 
-#eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
-#as of 2/18/14 added to .Rprofile as eolAPIkey
-
 ####citations####
 citation(package = 'taxize')[1]
 citation(package = 'taxize')[2]
@@ -120,20 +117,20 @@ spplist <- scan("specieslist.txt", what="list",skip=0, sep="\t", quote='"')
 
 gisdinfo <- gisd_isinvasive(spplist)
 
-grisout <- eol_invasive(name=spplist2, dataset='gris',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+grisout <- eol_invasive(name=spplist2, dataset='gris')
 grisout2 <- do.call(cbind,grisout)
 head(grisout2)
 
-iscout <- eol_invasive(name=spplist2, dataset='isc',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+iscout <- eol_invasive(name=spplist2, dataset='isc')
 iscout2 <- do.call(cbind, iscout)
 
-daisieout <- eol_invasive(name=spplist2, dataset='daisie',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+daisieout <- eol_invasive(name=spplist2, dataset='daisie')
 daisieout2 <- do.call(cbind, daisieout)
 
-i3nout <- eol_invasive(name=spplist2, dataset='i3n',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+i3nout <- eol_invasive(name=spplist2, dataset='i3n')
 i3nout2 <- do.call(cbind, i3nout)
 
-gisdout <- eol_invasive(name=spplist2, dataset='gisd',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+gisdout <- eol_invasive(name=spplist2, dataset='gisd')
 gisdout2 <- do.call(cbind,gisdout)
 
 
@@ -174,7 +171,7 @@ colnames(isc)[4] <- "in_isc"
 
 gisd_isinvasive("Taraxacum officinale")
 
-eol_invasive(name="Taraxacum officinale", dataset='gisd',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+eol_invasive(name="Taraxacum officinale", dataset='gisd')
 
 
 gisd <- subset(gisd, !is.na(eol_object_id))
@@ -240,8 +237,7 @@ title(main="Species with lab and CGP seq data")
 dev.off()
 
 #####recategorize###########
-#eol api key: 70268ca1d5fb6687295ae3623bccd8c9109e07d6
-#as of 2/18/14 added to .Rprofile as eolAPIkey 
+
 spplist <- scan("specieslist.txt", what="character",skip=0, sep="\t", quote='"')
 
 sppres <- tnrs(query=spplist, source="iPlant_TNRS")
@@ -252,7 +248,7 @@ sppres <- tnrs(query=spplist, source="iPlant_TNRS")
 # spplist <- c(spplist, "Centaurea stoebe","Carthamus palaestinus") #"Taraxacum campylodes"
 write(spplist,"specieslist.txt")
 
-allout <- eol_invasive(name=spplist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+allout <- eol_invasive(name=spplist, dataset='all')
 write.table(allout, "SpeciesSummary.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 
 #checking synonyms - #shouldn't Taroff, Cenmac, Helarg, Leotar be red/weeds?
@@ -274,7 +270,7 @@ synlist <- c("Cryptocarpha spathulata","Ambrosia elatior","Ambrosia glandulosa",
             "Taraxacum retroflexum", "Taraxacum subspathulatum","Taraxacum sylvanicum","Taraxacum taraxacum","Taraxacum tenejapense ",
             "Taraxacum vulgare",    "Taraxacum campylodes","Crassina elegans",    "Zinnia australis",      "Zinnia violacea"
 )
-synout <- eol_invasive(name=synlist, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+synout <- eol_invasive(name=synlist, dataset='all')
 write.table(synout, "SpeciesSummary_syn.txt", row.names=TRUE, col.names=TRUE, sep="\t", quote=F)
 #yes, Cenmac is red/weed
 gisd_isinvasive(spplist)
@@ -282,7 +278,7 @@ gisd_isinvasive(synlist)
 gisd_isinvasive(c("Taraxacum officinale", "Helianthus argophyllus", "Leontodon taraxacoides"))
 #taraxacum officinale should be red/weed
 
-eol_invasive(c("Carthamus oxyacanthus", "Carthamus palaestinus", "Carthamus oxyacantha"), dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6")
+eol_invasive(c("Carthamus oxyacanthus", "Carthamus palaestinus", "Carthamus oxyacantha"), dataset='all')
 gisd_isinvasive(c("Carthamus oxyacanthus", "Carthamus palaestinus", "Carthamus oxyacantha"))
 #Caroxy probably should be a weed, but isn't turning up in the databases...
 
@@ -372,7 +368,7 @@ AsterL <- Aster[[1]]
 
 AsterL2 <- as.vector(unique(AsterL$childtaxa_name))
 
-Asterout <- eol_invasive(name=AsterL2, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6") #count = TRUE,
+Asterout <- eol_invasive(name=AsterL2, dataset='all') #count = TRUE,
 
 summary(Asterout)
 
@@ -401,6 +397,6 @@ SunflL <- Sunfl[[1]]
 
 SunflL2 <- as.vector(unique(SunflL$childtaxa_name))
 
-Sunflout <- eol_invasive(name=SunflL2, dataset='all',key="70268ca1d5fb6687295ae3623bccd8c9109e07d6") #count = TRUE,
+Sunflout <- eol_invasive(name=SunflL2, dataset='all') #count = TRUE,
 
 summary(Sunflout)

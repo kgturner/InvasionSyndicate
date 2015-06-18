@@ -1,9 +1,7 @@
 InvasionSyndicate
 =================
 
-Code contributing to Hodgins et al., 2014, Comparative genomics in the Asteraceae reveal little evidence for parallel evoutionary change in invasive taxa. Molecular Ecology, manuscript ID MEC-14-1003.
-
-Hodgins KA, Bock DG, Hahn MA, Heredia SM, Turner KG, Rieseberg LH (2014) Comparative genomics in the Asteraceae reveal little evidence for parallel evolutionary change in invasive taxa. Molecular Ecology, manuscript ID MEC-14-1003.
+Code contributing to Hodgins KA, Bock DG, Hahn MA et al. (2015) Comparative genomics in the Asteraceae reveals little evidence for parallel evolutionary change in invasive taxa. Molecular Ecology, 24, 2226–2240.
 
 R code by KGT largely used for the purpose of classifying ~40 species included in comparative genomics dataset, using the taxize package in R. Additional work (not described in paper) addresses traits, synonyms, and phylogenies of those species. Main action included in inv.syndicate.R - producing species lists, querying databases, producing trees.
 
